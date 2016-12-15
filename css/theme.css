@@ -242,12 +242,12 @@ a:hover{
 h1{
     font-family: DIN;
     font-weight: bold;
-    font-size:50pt;
+    font-size:3.9em;
 }
 h2{
     font-family: DIN;
     font-weight: 300;
-    font-size:50pt;
+    font-size:3.9em;
     line-height:1.1em;
 }
 
