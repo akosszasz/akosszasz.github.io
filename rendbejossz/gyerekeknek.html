@@ -46,13 +46,13 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                <a id="home_icon" class="menuicon" href="index.html"></a>
-                <a id="kids_icon" class="menuicon" href="gyerekeknek.html"></a>
-                <a id="adults_icon" class="menuicon" href="felnotteknek.html"></a>
-                <a id="professionals_icon" class="menuicon" href="szakemberek.html"></a>
-                <a id="prices_icon" class="menuicon" href="arak.html"></a>
-                <a id="rent_icon" class="menuicon" href="teremberles.html"></a>
-                <a id="contact_icon" class="menuicon" href="kapcsolat.html"></a>
+                <a id="" class="menuicon" href="index.html"><img src="img/home.svg"></a>
+                <a id="" class="menuicon" href="gyerekeknek.html"><img src="img/kids.svg"></a>
+                <a id="" class="menuicon" href="felnotteknek.html"><img src="img/adults.svg"></a>
+                <a id="" class="menuicon" href="szakemberek.html"><img src="img/professionals.svg"></a>
+                <a id="" class="menuicon" href="arak.html"><img src="img/prices.svg"></a>
+                <a id="" class="menuicon" href="teremberles.html"><img src="img/rent.svg"></a>
+                <a id="" class="menuicon" href="kapcsolat.html"><img src="img/contact.svg"></a>
 
 
                 <ul class="nav navbar-nav navbar-right">
@@ -81,12 +81,9 @@
 <section style="padding-bottom:0; padding-top:-100px">
     <div class="container text-center">
         <div style="height:30px; color:#F45A3B"></div>
-
         <h2>MÓDSZEREK</h2>
-
-
-        <p><a href="#pszichologiaikonzultacio" style="color:#F45A3B">Nevelési tanácsadás, szülőkonzultáció</a></p>
-        <p><a style="color:#F45A3B">Gyermekpszichológiai tanácsadás</a></p>
+        <p class="page-scroll"><a href="#nevelesitanacsadas" style="color:#F45A3B">Nevelési tanácsadás, szülőkonzultáció</a></p>
+        <p class="page-scroll"><a href="#gyermekpszichologia" style="color:#F45A3B">Gyermekpszichológiai tanácsadás</a></p>
     </div>
     <div style="position: relative; bottom: -2px;">
         <img src="img/fox.svg" width="110%" style="position:relative; left:-2px;">
@@ -152,7 +149,7 @@
     </div>
 </section>
 
-<section class="modszerf" id="portfolio">
+<section class="modszerf" id="gyermekpszichologia">
     <div class="container">
         <div class="row">
             <div class="col-lg-2 text-left">
@@ -219,8 +216,14 @@
             </div>
         </div>
     </div>
-    <div style="position: relative; bottom: 0px;">
-        <img src="img/wave_top.svg" width="110%" style="position:relative; z-index: 1; left:-2px; bottom:0;">
+    <div class="hidden-sm hidden-md hidden-lg" style="position: relative; bottom: 0px;">
+        <img src="img/wave_top_xs.svg" width="110%" style="position:relative; z-index: 1; left:-2px; bottom:0;">
+    </div>
+    <div class="hidden-xs hidden-md hidden-lg" style="position: relative; bottom: 0px;">
+        <img src="img/wave_top_sm.svg" width="110%" style="position:relative; z-index: 1; left:-2px; bottom:0;">
+    </div>
+    <div class="hidden-xs hidden-sm" style="position: relative; bottom: -20px;">
+        <img src="img/wave_top_lg.svg" width="110%" style="position:relative; z-index: 1; left:-2px; bottom:0;">
     </div>
 </section>
 
@@ -267,7 +270,7 @@
 
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+<div class="scroll-top page-scroll">
     <a class="btn btn-primary" href="#page-top">
         <i class="fa fa-chevron-up"></i>
     </a>
@@ -289,27 +292,45 @@
             </div>
         </div>
         <div class="container">
+            <div class="row" style="margin-top:40px;">
+                <div class="col-xs-2">
+                </div>
+                <div class="col-xs-4">
+                    <a class="menuicon" href="index.html"><img src="img/home.svg" height="100px"></a>
+                </div>
+                <div class="col-xs-4">
+                    <a class="menuicon" href="gyerekeknek.html"><img src="img/kids.svg" height="100px"></a>
+                </div>
+                <div class="col-xs-2">
+                </div>
+            </div>
             <div class="row">
-                <div class="col-xs-6">
-                    <a class="menuicon" href="index.html"><img src="img/home.svg"></a>
+                <div class="col-xs-2">
                 </div>
-                <div class="col-xs-6">
-                    <a class="menuicon" href="gyerekeknek.html"><img src="img/kids.svg"></a>
+                <div class="col-xs-4">
+                    <a class="menuicon" href="felnotteknek.html"><img src="img/adults.svg" height="100px"></a>
                 </div>
-                <div class="col-xs-6">
-                    <a class="menuicon" href="felnotteknek.html"><img src="img/adults.svg"></a>
+                <div class="col-xs-4">
+                    <a class="menuicon" href="szakemberek.html"><img src="img/professionals.svg" height="100px"></a>
                 </div>
-                <div class="col-xs-6">
-                    <a class="menuicon" href="szakemberek.html"><img src="img/professionals.svg"></a>
+                <div class="col-xs-2">
                 </div>
-                <div class="col-xs-6">
-                    <a class="menuicon" href="arak.html"><img src="img/prices.svg"></a>
+            </div>
+            <div class="row">
+                <div class="col-xs-2">
                 </div>
-                <div class="col-xs-6">
-                    <a class="menuicon" href="teremberles.html"><img src="img/rent.svg"></a>
+                <div class="col-xs-4">
+                    <a class="menuicon" href="arak.html"><img src="img/prices.svg" height="100px"></a>
                 </div>
+                <div class="col-xs-4">
+                    <a class="menuicon" href="teremberles.html"><img src="img/rent.svg" height="100px"></a>
+                </div>
+                <div class="col-xs-2">
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-xs-12">
-                    <a class="menuicon" href="kapcsolat.html"><img src="img/contact.svg"></a>
+                    <a class="menuicon" href="kapcsolat.html"><img src="img/contact.svg" height="100px"></a>
                 </div>
             </div>
         </div>
@@ -1400,7 +1421,7 @@
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
-    var navbarHeight = $('#MagicMenu').outerHeight();
+    var navbarHeight = 100;
 
     $(window).scroll(function(event){
         didScroll = true;

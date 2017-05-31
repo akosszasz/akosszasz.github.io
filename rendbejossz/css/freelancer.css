@@ -356,54 +356,6 @@ img.portfolio-item:hover{
   background-color:#ffffff;
   z-index:2;
 }
-#home_icon{
-  content:url('../img/home.svg');
-}
-#home_icon:hover{
-  /*content:url('../img/home-h.svg');*/
-}
-
-#kids_icon{
-  content:url('../img/kids.svg');
-}
-#kids_icon:hover{
-  /*content:url('../img/kids-h.svg');*/
-}
-
-#adults_icon{
-  content:url('../img/adults.svg');
-}
-#adults_icon:hover{
-  /*content:url('../img/adults-h.svg');*/
-}
-
-#professionals_icon{
-  content:url('../img/professionals.svg');
-}
-#professionals_icon:hover{
-  /*content:url('../img/professionals-h.svg');*/
-}
-
-#prices_icon{
-  content:url('../img/prices.svg');
-}
-#prices_icon:hover{
-  /*content:url('../img/prices-h.svg');*/
-}
-
-#rent_icon{
-  content:url('../img/rent.svg');
-}
-#rent_icon:hover{
-  /*content:url('../img/rent-h.svg');*/
-}
-
-#contact_icon{
-  content:url('../img/contact.svg');
-}
-#contact_icon:hover{
-  /*content:url('../img/contact-h.svg');*/
-}
 
 .nav-up {
   display:none;
@@ -539,7 +491,7 @@ img.portfolio-item:hover{
   z-index:1;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: transparent;
   border-radius: 50%;
   width: 215px;
   height: 215px;
@@ -759,8 +711,8 @@ fieldset[disabled] .btn-success.active {
 }
 .portfolio-modal .close-modal {
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   background-color: transparent;
   top: 25px;
   right: 25px;
@@ -770,7 +722,7 @@ fieldset[disabled] .btn-success.active {
   opacity: 0.3;
 }
 .portfolio-modal .close-modal .lr {
-  height: 75px;
+  height: 50px;
   width: 1px;
   margin-left: 35px;
   background-color: #2C3E50;
@@ -782,7 +734,7 @@ fieldset[disabled] .btn-success.active {
   z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
+  height: 50px;
   width: 1px;
   background-color: #2C3E50;
   transform: rotate(90deg);
