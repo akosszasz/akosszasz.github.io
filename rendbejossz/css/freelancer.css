@@ -11,7 +11,7 @@ body {
 
 @font-face {
   font-family: reef;
-  src: url(fonts/Reef.otf);
+  src: url(../fonts/Reef.otf);
 }
 
 p {
