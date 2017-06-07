@@ -9,6 +9,10 @@ body {
   color:#404041;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: reef;
   src: url(../fonts/Reef.otf);
@@ -132,7 +136,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background-image:url('../img/bg.jpg');
+  background-image:url('../img/bg.png');
   background-position: top;
   height:100vh;
   background-size:cover;
@@ -352,10 +356,12 @@ img.portfolio-item:hover{
 .modszerk{
   background-color:#68D1C9;
   color: white;
+  padding:0 0 10px 0;
 }
 .modszerf{
   background-color:#ffffff;
   z-index:2;
+  padding:0 0 10px 0;
 }
 
 .nav-up {
@@ -363,7 +369,6 @@ img.portfolio-item:hover{
 }
 #MagicMenu{
   background: #fff;
-
   z-index:3;
   transition: top 0.2s ease-in-out;
   width: 100%;
@@ -372,6 +377,7 @@ img.portfolio-item:hover{
 .modszerp{
   background-color:#F45A3B;
   color: white;
+  padding:0 0 10px 0;
 }
 
 .prices-item {
@@ -476,6 +482,12 @@ img.portfolio-item:hover{
 }
 #f3{
   background-image: url('../img/felnott/f3.png');
+  background-position: bottom;
+  text-align: center;
+  background-size: cover;
+}
+#f4{
+  background-image: url('../img/felnott/f4.png');
   background-position: bottom;
   text-align: center;
   background-size: cover;
@@ -798,14 +810,16 @@ Image credits: unsplash.com
   height: 100vh;
 }
 .fade-carousel .carousel-indicators > li {
-  margin: 0 2px;
+  margin: 0 5px;
   background-color: #fff;
   border-color: #fff;
   opacity: .7;
+  width: 16px;
+  height: 16px;
 }
 .fade-carousel .carousel-indicators > li.active {
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 16px;
   opacity: 1;
 }
 
@@ -820,6 +834,7 @@ Image credits: unsplash.com
   color: #fff;
   text-align: left;
   text-transform: uppercase;
+  line-height:2.5em;
   text-shadow: 1px 1px 0 rgba(0,0,0,.75);
   -webkit-transform: translate3d(-50%,-50%,0);
   -moz-transform: translate3d(-50%,-50%,0);
