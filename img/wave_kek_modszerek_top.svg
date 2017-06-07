@@ -1,0 +1,19 @@
+
+<svg width="1366px" height="119px" viewBox="0 0 1366 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1366 59.3973796 1366 118.794759 0 118.794759 0 59.3973796 0 0 1366 0 1366 59.3973796"></polygon>
+    </defs>
+    <g id="monitor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="felnőtteknek" transform="translate(0.000000, -2614.000000)">
+            <g id="Page-1-Copy-4" transform="translate(0.000000, 2614.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M1366,0 C1366,0 1059.93062,119.751244 661.65625,42.7145354 C254.670779,-36.0054833 0,40.9743083 0,40.9743083 L0,118.795044 L1366,118.795044 L1366,0 Z" id="Fill-1" fill="#68D1C9" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
