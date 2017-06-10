@@ -1,0 +1,74 @@
+@@font-face {
+  font-family: 'supply';
+  src:url('fonts/supply-light.otf');
+  font-weight: 300;
+}
+@@font-face {
+  font-family: 'supply';
+  src:url('fonts/supply-bold.otf');
+  font-weight: 600;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  margin:0;
+  font-family: 'supply', monospace;
+  font-weight: 300;
+}
+
+#welcome-text{
+  font-size: 20px;
+  position: fixed;
+  position: fixed;
+  padding:0 30px;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+#welcome-text p{
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-text:hover ~ #works{
+  background-image: url('img/works_bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#welcome-text:hover{
+  background:#fff;
+}
+
+section{
+  padding:0;
+  width:100vw;
+  height:100vh;
+}
+#works{
+  background-image: url('img/works.png');
+  background-size: 370px 96px;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#about{
+  background-image: url('img/about.png');
+  background-size: 370px 96px;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#music{
+  background-image: url('img/music.png');
+  background-size: 370px 96px;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

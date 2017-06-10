@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="style/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        var terms = ["graphic designer", "brand designer", "UI designer", "logo designer"];
-
-        function rotateTerm() {
-            var ct = $("#rotate").data("term") || 0;
-            $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn()
-                    .delay(2000).fadeOut(200, rotateTerm);
-        }
-        $(rotateTerm);
-    </script>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="theme.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="full-col">
-    <span>Hello,</span><br>
-    My name is Akos Szasz,<br>
-    a <span id="rotate"></span><br>
-    located in Budapest, HU.<br>
-    <br>
-    Check out my <br>
-    <a href="projects.html">Projects</a><br>
-    <a href="about.html">CV</a>
-</div>
-
+    <div id="welcome-text">
+      <p>
+        hello,<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>my name is akos szasz <br>
+        a graphic designer<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;</span>typographer<br>
+        ui designer<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;</span>and brand designer<br>
+        located in dumfries, scotland, uk
+      </p>
+    </div>
+    <section>
+    </section>
+    <section id="works">
+    </section>
+    <section id="about">
+    </section>
+    <section id="music">
+    </section>
 </body>
 </html>
