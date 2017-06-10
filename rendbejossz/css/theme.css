@@ -549,7 +549,7 @@ footer .footer-above {
   background-color: #68D1C9;
 }
 footer .footer-col {
-  height: 400px;
+  height: auto;
   margin-bottom: 50px;
 }
 footer .footer-below {

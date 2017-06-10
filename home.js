@@ -18,7 +18,11 @@ function hoverEnter() {
 function hoverLeave() {
   hover = false;
   document.getElementById(lastSection).className = lastSection;
+  document.getElementById("welcome-text").className = "";
   lastSection = "empty"
+  works.className = "works";
+  about.className = "about";
+  music.className = "music";
 }
 
 function scrollPage() {
@@ -45,6 +49,9 @@ function scrollPage() {
         lastElem.className = lastSection;
         lastSection = "works";
         works.className = "works-h";
+        about.className = "";
+        music.className = "";
+        midDiv.className = "works-hdiv"
         return;
       }
       checkRect = about.getBoundingClientRect();
@@ -53,7 +60,10 @@ function scrollPage() {
         if(lastElem === about) return;
         lastElem.className = lastSection;
         lastSection = "about";
+        works.className = "";
         about.className = "about-h";
+        music.className = "";
+        midDiv.className = "about-hdiv"
         return;
       }
       checkRect = music.getBoundingClientRect();
@@ -62,7 +72,10 @@ function scrollPage() {
         if(lastElem === music) return;
         lastElem.className = lastSection;
         lastSection = "music";
+        works.className = "";
+        about.className = "";
         music.className = "music-h";
+        midDiv.className = "music-hdiv"
         return;
       }
     }

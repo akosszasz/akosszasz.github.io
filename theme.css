@@ -35,10 +35,8 @@ body{
   margin: 3px 0;
 }
 
-#welcome-text:hover ~ #works{}
-
 .works-h{
-  background-image: url('img/works_bg.png');
+  background-image: url('img/works-bg.png');
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
@@ -46,7 +44,7 @@ body{
 }
 
 .about-h{
-  background-image: url('img/about_bg.png');
+  background-image: url('img/about-bg.png');
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
@@ -54,16 +52,32 @@ body{
 }
 
 .music-h{
-  background-image: url('img/music_bg.png');
+  background-image: url('img/music-bg.png');
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
+.works-hdiv{
+  background-image: url('img/works-hl.png');
+  background-size: 370px 96px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
-#welcome-text:hover{
-  background:#fff;
+.about-hdiv{
+  background-image: url('img/about-hl.png');
+  background-size: 370px 96px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.music-hdiv{
+  background-image: url('img/music-hl.png');
+  background-size: 370px 96px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 section{
