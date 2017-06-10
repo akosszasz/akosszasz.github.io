@@ -1,11 +1,11 @@
 @fontface {
   font-family: 'supply-light';
-  src:url('../fonts/supply-light.otf');
+  src:url('fonts/supply-light.otf');
   font-weight: 300;
 }
 @fontface {
   font-family: 'supply-bold';
-  src:url('../fonts/supply-bold.otf');
+  src:url('fonts/supply-bold.otf');
   font-weight: 600;
 }
 
