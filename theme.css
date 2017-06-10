@@ -1,9 +1,9 @@
-@@font-face {
+@@fontface {
   font-family: 'supply-light';
   src:url('../fonts/supply-light.otf');
   font-weight: 300;
 }
-@@font-face {
+@@fontface {
   font-family: 'supply-bold';
   src:url('../fonts/supply-bold.otf');
   font-weight: 600;
