@@ -549,7 +549,7 @@ footer .footer-above {
   background-color: #68D1C9;
 }
 footer .footer-col {
-  height: auto;
+  height: 550px;
   margin-bottom: 50px;
 }
 footer .footer-below {
@@ -715,6 +715,11 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
+}
+.portfolio-modal .modal-content a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:#404041;
+  font-size: 18px;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
