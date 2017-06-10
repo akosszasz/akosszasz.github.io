@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="theme.css" rel="stylesheet">
+
+  <script type="text/javascript">
+
+    function jumpPage() {
+        var midDiv = document.getElementById("welcome-text");
+        if(midDiv.getBoundingClientRect) {
+            var divRect = midDiv.getBoundingClientRect();
+            var checkRect = document.getElementById("works").getBoundingClientRect();
+            if(divRect.bottom < checkRect.top)
+            return;
+            if(divRect.bottom < checkRect.bottom)
+            {
+                alert("works");
+                return;
+            }
+
+            checkRect = document.getElementById("about").getBoundingClientRect();
+            if(divRect.bottom < checkRect.bottom)
+            {
+                alert("about");
+                return;
+            }
+            checkRect = document.getElementById("music").getBoundingClientRect();
+            if(divRect.bottom < checkRect.bottom)
+            {
+                alert("music");
+                return;
+            }
+        }
+    }
+  </script>
+
+</head>
+<body>
+    <div id="welcome-text" onclick="jumpPage()">
+      <p>
+        hello,<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>my name is akos szasz <br>
+        a graphic designer<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;</span>typographer<br>
+        ui designer<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;</span>and brand designer<br>
+        located in dumfries, scotland, uk
+      </p>
+    </div>
+    <section>
+    </section>
+    <section id="works">
+    </section>
+    <section id="about">
+    </section>
+    <section id="music">
+    </section>
+</body>
+</html>

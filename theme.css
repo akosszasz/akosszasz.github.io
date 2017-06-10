@@ -1,10 +1,10 @@
 @@font-face {
-  font-family: 'supply';
+  font-family: 'supply-light';
   src:url('fonts/supply-light.otf');
   font-weight: 300;
 }
 @@font-face {
-  font-family: 'supply';
+  font-family: 'supply-bold';
   src:url('fonts/supply-bold.otf');
   font-weight: 600;
 }
@@ -15,7 +15,7 @@ html{
 
 body{
   margin:0;
-  font-family: 'supply', monospace;
+  font-family: 'supply-light', monospace;
   font-weight: 300;
 }
 
@@ -24,10 +24,9 @@ body{
   position: fixed;
   position: fixed;
   padding:0 30px;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #welcome-text p{
   font-size: 20px;
@@ -35,13 +34,33 @@ body{
   align-items: center;
 }
 
-#welcome-text:hover ~ #works{
+#welcome-text:hover ~ #works{}
+
+.works-h{
   background-image: url('img/works_bg.png');
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+.about-h{
+  background: rgba(108,108,238,0.5);
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.music-h{
+  background: rgba(108,238,108,0.5);
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
 #welcome-text:hover{
   background:#fff;
 }
@@ -51,21 +70,21 @@ section{
   width:100vw;
   height:100vh;
 }
-#works{
+.works{
   background-image: url('img/works.png');
   background-size: 370px 96px;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-#about{
+.about{
   background-image: url('img/about.png');
   background-size: 370px 96px;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-#music{
+.music{
   background-image: url('img/music.png');
   background-size: 370px 96px;
   background-position: center center;

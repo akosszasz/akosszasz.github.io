@@ -83,7 +83,7 @@ h4{
 }
 
 .intrinsic-container iframe {
-  position: absolute;
+  position: relative;
   top:0;
   left: 0;
   width: 100%;
@@ -192,7 +192,7 @@ header .intro-text .skills {
   padding:20px;
 }
 .menuicon{
-  padding:13px;
+  margin: 0 10px;
 }
 .navbar-custom {
   background: white;
@@ -827,8 +827,8 @@ Image credits: unsplash.com
 /*          Hero Headers        */
 /********************************/
 .hero {
-  position: absolute;
-  bottom: 10%;
+  position: relative;
+  bottom: 200px;
   left: 50%;
   z-index: 3;
   color: #fff;

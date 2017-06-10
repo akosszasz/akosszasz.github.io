@@ -7,9 +7,12 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="theme.css" rel="stylesheet">
+
+  <script type="text/javascript" src="home.js"></script>
+
 </head>
 <body>
-    <div id="welcome-text">
+    <div id="welcome-text" onmouseleave="hoverLeave()" onmouseover="hoverEnter()" onclick="jumpPage()">
       <p>
         hello,<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>my name is akos szasz <br>
         a graphic designer<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;</span>typographer<br>
@@ -17,13 +20,13 @@
         located in dumfries, scotland, uk
       </p>
     </div>
-    <section>
+    <section id="empty">
     </section>
-    <section id="works">
+    <section id="works" class="works">
     </section>
-    <section id="about">
+    <section id="about" class="about">
     </section>
-    <section id="music">
+    <section id="music" class="music">
     </section>
 </body>
 </html>
