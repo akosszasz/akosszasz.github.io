@@ -92,7 +92,7 @@ h4{
 }
 
 .szakemberinfo{
-  font-size:14px;
+  font-size:15px;
 }
 
 h1,
@@ -726,7 +726,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-content a {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color:#404041;
-  font-size: 14px;
+  font-size: 15px;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
@@ -847,6 +847,7 @@ Image credits: unsplash.com
   text-align: left;
   text-transform: uppercase;
   line-height:2.5em;
+  padding-left: 25px;
   text-shadow: 1px 1px 0 rgba(0,0,0,.75);
   -webkit-transform: translate3d(-50%,-50%,0);
   -moz-transform: translate3d(-50%,-50%,0);
