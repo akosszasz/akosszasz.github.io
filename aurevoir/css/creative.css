@@ -7,7 +7,7 @@ html {
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
   background-image: url("../img/header_s.jpg");
-  background-position: center center;
+  background-position: center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,15 +26,38 @@ hr.light {
 }
 
 a {
-  color: #F05F40;
+  color: #212529;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  padding-bottom: 2px;
+  border-bottom: 1px #212529 solid;
 }
 
 a:hover {
-  color: #f05f40;
+  color: #212529;
+  text-decoration: none;
+  padding-bottom: 7px;
+  border-bottom: 1px #212529 solid;
 }
+
+.social {
+  padding: 0 15px;
+  color: #212529;
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  border-bottom: 0;
+}
+
+.social:hover  {
+  color: #212529;
+  opacity: 0.7;
+  text-decoration: none;
+  border-bottom: 0;
+}
+
 
 h1,
 h2,
@@ -60,6 +83,10 @@ h6 {
 section {
   background: white;
   padding: 8rem 0;
+}
+
+#contact {
+  background: #f8f8f8;
 }
 
 .section-heading {
@@ -177,7 +204,8 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-
+  height: 80vh;
+  min-height: 80vh;
 }
 
 header.masthead hr {
@@ -201,8 +229,6 @@ header.masthead p {
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
-    min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
   }
