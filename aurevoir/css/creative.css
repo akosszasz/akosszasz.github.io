@@ -150,6 +150,14 @@ header.masthead p {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1440px) {
+  body{
+    background-image: url("../img/header_s2.jpg");
+    background-position: top -160px center;
+  }
+}
+
+
 @media (min-width: 992px) {
   header.masthead {
     padding-top: 0;
