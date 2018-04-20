@@ -42,21 +42,26 @@ a:hover {
   border-bottom: 1px #212529 solid;
 }
 
-.social {
-  padding: 0 15px;
+a.social {
+  color: #212529;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  border-bottom: 0;
+  text-decoration: none;
+
+
+}
+
+a.social:hover  {
   color: #212529;
   opacity: 1;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
   border-bottom: 0;
 }
 
-.social:hover  {
-  color: #212529;
-  opacity: 0.7;
-  text-decoration: none;
-  border-bottom: 0;
+a.socialb{
+  font-family: "Oswald", "Helvetica Neue", sans-serif;
 }
 
 
@@ -143,6 +148,7 @@ header.masthead p {
     background-image: url("../img/header_xs.jpg");
     background-size: 100%;
     background-position: top;
+    background-attachment: fixed;
   }
   header.masthead {
     height: 72vh;
@@ -154,6 +160,7 @@ header.masthead p {
   body{
     background-image: url("../img/header_s2.jpg");
     background-position: top -160px center;
+    background-attachment: fixed;
   }
 }
 
