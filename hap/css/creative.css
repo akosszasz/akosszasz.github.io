@@ -23,7 +23,16 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
+}
 
+@media screen and (max-width: 600px) {
+  body {
+    background-position: center;
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+  }
 }
 
 p {
