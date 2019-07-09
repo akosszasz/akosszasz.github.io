@@ -25,16 +25,6 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    background-position: center;
-    background-image: url("../img/header.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
-  }
-}
-
 p {
   text-align: center;
   font-size: 18px;
@@ -48,11 +38,38 @@ p {
 #cover-fade{
   position: relative;
   top: -43vh;
-  padding-bottom: -43vh;
   height: 30vh;
   background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 1) 80%);
   margin: 0;
   max-width: 100vw;
+}
+
+#text-content{
+   margin-top: -25vh;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #111;
+    background-attachment: scroll;
+    background-position: top;
+  }
+
+  #cover-fade{
+    position: relative;
+    top: -82vh;
+    height: 30vh;
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 1) 80%);
+    margin: 0;
+    max-width: 100vw;
+  }
+
+  #text-content{
+     margin-top: -64vh;
+  }
 }
 
 .haplogo{
