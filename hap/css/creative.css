@@ -58,7 +58,7 @@ p {
 }
 
 #text-content{
-   margin-top: -25vh;
+   margin-top: -15vh;
 }
 
 
@@ -288,6 +288,16 @@ header.masthead p {
 
   #text-content{
      margin-top: -64vh;
+  }
+  #bottom-image {
+    height: 30vh;
+    background-color:#111;
+    background-position: center;
+    background-image: url("../img/footer_02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 100%;
   }
 }
 
