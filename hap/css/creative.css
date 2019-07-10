@@ -270,11 +270,7 @@ header.masthead p {
 @media screen and (max-width: 575px) {
   header {
     background-image: none;
-    background-repeat: no-repeat;
-    background-size: 100%;
     background-color: #111;
-    background-attachment: scroll;
-    background-position: top;
   }
 
   #cover-fade{
@@ -290,14 +286,8 @@ header.masthead p {
      margin-top: -54vh;
   }
   #bottom-image {
-    height: 30vh;
-    background-color:#111;
-    background-position: center;
-    background-image: url("../img/footer_02.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    max-height: 100%;
+    background-image: none;
+    background-color: #111;
   }
 }
 
