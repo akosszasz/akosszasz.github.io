@@ -48,29 +48,6 @@ p {
    margin-top: -25vh;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    background-image: url("../img/header.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #111;
-    background-attachment: scroll;
-    background-position: top;
-  }
-
-  #cover-fade{
-    position: relative;
-    top: -82vh;
-    height: 30vh;
-    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 1) 80%);
-    margin: 0;
-    max-width: 100vw;
-  }
-
-  #text-content{
-     margin-top: -64vh;
-  }
-}
 
 .haplogo{
   margin: 100px auto 0 auto;
@@ -277,17 +254,28 @@ header.masthead p {
   outline: none;
 }
 
-@media (min-width: 768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
+@media screen and (max-width: 575px) {
+  body {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #111;
+    background-attachment: scroll;
+    background-position: top;
   }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
-  }
-}
 
-.text-primary {
-  color: #F05F40 !important;
+  #cover-fade{
+    position: relative;
+    top: -82vh;
+    height: 30vh;
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 1) 80%);
+    margin: 0;
+    max-width: 100vw;
+  }
+
+  #text-content{
+     margin-top: -64vh;
+  }
 }
 
 .btn {
