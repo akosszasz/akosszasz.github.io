@@ -18,11 +18,21 @@ html {
 body {
   font-family: 'Akrobat', Arial, sans-serif;
   color: #fff;
+  background-color:#111;
 }
 
 header {
   background-position: center;
   background-image: url("../img/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#bottom-image {
+  height: 30vh;
+  background-position: center;
+  background-image: url("../img/footer_02.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
