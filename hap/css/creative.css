@@ -286,6 +286,8 @@ header.masthead p {
      margin-top: -54vh;
   }
   #bottom-image {
+    height:auto;
+    position:relative;
     background-image: none;
     background-color: #111;
   }
