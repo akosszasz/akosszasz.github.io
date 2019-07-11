@@ -282,6 +282,9 @@ header.masthead p {
   #contact {
     background-size:cover;
   }
+  .portrait{
+    padding: 30px;
+  }
 }
 
 .btn {
