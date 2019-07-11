@@ -29,13 +29,11 @@ header {
   background-attachment: fixed;
 }
 
-#bottom-image {
-  height: 30vh;
+footer {
   background-position: center;
   background-image: url("../img/footer_02.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 p {
@@ -285,10 +283,8 @@ header.masthead p {
   #text-content{
      margin-top: -54vh;
   }
-  #bottom-image {
-    height:30vh;
-    position:relative;
-    background-image: none;
+  footer {
+    background-size:cover;
     background-color: #111;
   }
 }
