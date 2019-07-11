@@ -29,7 +29,7 @@ header {
   background-attachment: fixed;
 }
 
-footer {
+.contact {
   background-position: center;
   background-image: url("../img/footer_02.png");
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ header.masthead p {
   #text-content{
      margin-top: -54vh;
   }
-  footer {
+  .contact {
     background-size:cover;
     background-color: #111;
   }
