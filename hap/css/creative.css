@@ -32,7 +32,8 @@ header {
 
 #contact {
   background-position: center;
-  background-image: url("../img/footer_dark2.png");
+  background: linear-gradient(to bottom, rgba(17,17,17,1) 0%,
+              rgba(17,17,17,0)) 10%, url("../img/footer_dark2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color:#111;
@@ -63,6 +64,18 @@ p {
 #social-icons a:hover{
   text-decoration: none;
   color:rgba(255,255,255,.7);
+}
+
+.mzklogo{
+  text-decoration: none;
+  border:none;
+  opacity: 1;
+}
+
+.mzklogo:hover{
+  text-decoration: none;
+  border:none;
+  opacity: .7;
 }
 
 #cover-fade{
