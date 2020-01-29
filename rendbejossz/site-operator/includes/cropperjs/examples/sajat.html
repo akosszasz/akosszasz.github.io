@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cropper.js</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/cropper.css">
+  <style>
+    .container {
+      max-width: 640px;
+      margin: 20px auto;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Cropper with a range of aspect ratio</h1>
+  <div>
+    <img id="image" src="../docs/images/picture.jpg" alt="Picture">
+  </div>
+  <button id="crop" type="button" class="btn btn-primary" data-method="getCroppedCanvas">
+            <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="cropper.getCroppedCanvas()">
+              Kivág
+            </span>
+  </button>
+  <canvas id="myCanvas" width="578" height="200"></canvas>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script>
+   function sendImageToServer (canvas, url) {
+
+        function onBlob (blob) {
+            var request = new XMLHttpRequest();
+            request.open('POST', url);
+            request.onload = function (evt) {
+                // Blob sent to server.
+            };
+
+            request.send(blob);
+        }
+
+        canvas.toBlob(onBlob);
+    }
+</script>
+<script src="../dist/cropper.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        var image = document.querySelector('#image');
+        var minAspectRatio = 0.5;
+        var maxAspectRatio = 1.5;
+        var cropper = new Cropper(image, {
+            ready: function () {
+                var cropper = this.cropper;
+                var containerData = cropper.getContainerData();
+                var cropBoxData = cropper.getCropBoxData();
+                var aspectRatio = cropBoxData.width / cropBoxData.height;
+                var newCropBoxWidth;
+
+                if (aspectRatio < minAspectRatio || aspectRatio > maxAspectRatio) {
+                    newCropBoxWidth = cropBoxData.height * ((minAspectRatio + maxAspectRatio) / 2);
+
+                    cropper.setCropBoxData({
+                        left: (containerData.width - newCropBoxWidth) / 2,
+                        width: newCropBoxWidth
+                    });
+                }
+            },
+            cropmove: function () {
+                var cropper = this.cropper;
+                var cropBoxData = cropper.getCropBoxData();
+                var aspectRatio = cropBoxData.width / cropBoxData.height;
+
+                if (aspectRatio < minAspectRatio) {
+                    cropper.setCropBoxData({
+                        width: cropBoxData.height * minAspectRatio
+                    });
+                } else if (aspectRatio > maxAspectRatio) {
+                    cropper.setCropBoxData({
+                        width: cropBoxData.height * maxAspectRatio
+                    });
+                }
+            }
+        });
+    });
+</script>
+<script>
+
+    $('button#crop').click(function(){
+        console.log('klikk');
+        cropper.getCroppedCanvas();
+
+        cropper.getCroppedCanvas({
+            width: 160,
+            height: 90
+        });
+
+// Upload cropped image to server if the browser supports `HTMLCanvasElement.toBlob`
+        cropper.getCroppedCanvas().toBlob(function (blob) {
+            var formData = new FormData();
+
+            formData.append('croppedImage', blob);
+
+            // Use `jQuery.ajax` method
+            $.ajax('/path/to/upload', {
+                method: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function () {
+                    console.log('Upload success');
+                },
+                error: function () {
+                    console.log('Upload error');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

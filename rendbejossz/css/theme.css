@@ -25,10 +25,10 @@ p {
 p.small {
   font-size: 16px;
 }
-a,
-a:focus,
-a:active,
-a.active {
+a:not(.gdpr-a),
+a:focus:not(.gdpr-a),
+a:active:not(.gdpr-a),
+a.active:not(.gdpr-a) {
   font-family: 'reef', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #059B90;
   font-size: 24px;
@@ -37,6 +37,14 @@ a.active {
 
 a:hover{
   color:#404041;
+}
+
+.datapolicy{
+  margin-top:20px;
+}
+
+.datapolicy a {
+  color: #68d1c9
 }
 
 h3{
@@ -92,7 +100,12 @@ h4{
 }
 
 .szakemberinfo{
-  font-size:15px;
+  font-size: 18px;
+}
+
+.szakemberinfo a{
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -101,7 +114,7 @@ h3,
 h5,
 h6 {
   font-family: "Reef", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  /*font-weight: bold;*/
 }
 hr.star-light,
 hr.star-primary {
@@ -141,7 +154,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.jpg);
   background-position-y: 40px;
   height: 100vh;
   background-position-x: center;
@@ -390,7 +403,7 @@ img.portfolio-item:hover{
 .prices-item {
   text-transform: uppercase;
   border: 3px solid #68D1C9;
-  height: 220px;
+  height: 260px;
   font-size: 24px;
   padding: 30px 40px;
   margin-bottom: 30px;
@@ -499,6 +512,18 @@ img.portfolio-item:hover{
   text-align: center;
   background-size: cover;
 }
+#f5{
+  background-image: url('../img/felnott/f5.png');
+  background-position: bottom;
+  text-align: center;
+  background-size: cover;
+}
+#f6{
+  background-image: url('../img/felnott/f6.png');
+  background-position: bottom;
+  text-align: center;
+  background-size: cover;
+}
 #bigicon-wrapper{
 
   display: flex;
@@ -549,6 +574,16 @@ form .row:first-child .floating-label-form-group {
 footer {
   color: white;
 }
+
+.footerbg{
+  min-height: 800px;
+  background: url("../img/bottombg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
 footer h3 {
   margin-bottom: 30px;
 }
@@ -709,7 +744,7 @@ fieldset[disabled] .btn-success.active {
   border-radius: 100%;
   line-height: 28px;
 }
-.portfolio-modal .modal-content {
+.modal-content {
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -719,22 +754,22 @@ fieldset[disabled] .btn-success.active {
   padding: 100px 0;
   text-align: center;
 }
-.portfolio-modal .modal-content h2 {
+.modal-content h2 {
   margin: 0;
   font-size: 3em;
 }
-.portfolio-modal .modal-content a {
+.modal-content a {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color:#404041;
-  font-size: 15px;
+  font-size: 18px;
 }
-.portfolio-modal .modal-content img {
+.modal-content img {
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content .item-details {
+.modal-content .item-details {
   margin: 30px 0;
 }
-.portfolio-modal .close-modal {
+.close-modal {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -743,10 +778,10 @@ fieldset[disabled] .btn-success.active {
   right: 25px;
   cursor: pointer;
 }
-.portfolio-modal .close-modal:hover {
+.close-modal:hover {
   opacity: 0.3;
 }
-.portfolio-modal .close-modal .lr {
+.close-modal .lr {
   height: 50px;
   width: 1px;
   margin-left: 35px;
@@ -758,7 +793,7 @@ fieldset[disabled] .btn-success.active {
   /* Safari and Chrome */
   z-index: 1051;
 }
-.portfolio-modal .close-modal .lr .rl {
+.close-modal .lr .rl {
   height: 50px;
   width: 1px;
   background-color: #2C3E50;
@@ -801,23 +836,18 @@ div#maincontent {
 
 
 
-/*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
 
 /********************************/
-/*       Fade Bs-carousel       */
+/*           Carousel           */
 /********************************/
 .fade-carousel {
   position: relative;
   height: 100vh;
   display:flex;
   align-self:flex-end;
-
-
+  z-index: -10;
 }
+
 .fade-carousel .carousel-inner .item {
   height: 100vh;
 }
@@ -908,36 +938,36 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .teremslide-1 {
-  background-image: url('../img/balna.png');
+  background-image: url('../img/balna.jpg');
 }
 .fade-carousel .slides .teremslide-2 {
-  background-image: url('../img/elefant.png');
+  background-image: url('../img/elefant.jpg');
 }
 .fade-carousel .slides .teremslide-3 {
-  background-image: url('../img/holdfarkas.png');
+  background-image: url('../img/holdfarkas.jpg');
 }
 .fade-carousel .slides .teremslide-4 {
-  background-image: url('../img/kolibri.png');
+  background-image: url('../img/kolibri.jpg');
 }
 
 .fade-carousel .slides .slide-1 {
-  background-image: url('../img/gy1.png');
+  background-image: url('../img/gy1.jpg');
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url('../img/gy2.png');
+  background-image: url('../img/gy2.jpg');
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url('../img/gy3.png');
+  background-image: url('../img/gy3.jpg');
 }
 .fade-carousel .slides .slide-4 {
-  background-image: url('../img/gy4.png');
+  background-image: url('../img/gy4.jpg');
 }
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media screen and (min-width: 980px){
+/*@media screen and (min-width: 980px){
   .hero { width: 980px; }
-}
+}*/
 @media screen and (max-width: 640px){
   .hero h1 { font-size: 4em; }
 }

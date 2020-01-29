@@ -1,0 +1,193 @@
+h1.blog{
+    margin: 40px 0;
+}
+section.blog{
+    margin-top: 60px;
+}
+div.box{
+    height: 262px;
+    padding-top:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+    background-color: #fff;
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition: 0.1s ease-out;
+    -ms-transition: 0.1s ease-out;
+    -o-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+    overflow: hidden;
+}
+div.box:hover{
+    background-size: 120% auto;
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition: 0.1s ease-out;
+    -ms-transition: 0.1s ease-out;
+    -o-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+}
+a.box-a:hover{
+    text-decoration: none;
+}
+@media screen and (max-width: 450px){
+    div.box{background-size: cover}/*auto 100%*/
+    div.box:hover {background-size: auto 130%}
+}
+img.box-img{
+    width: 100%;
+    height: auto;
+}
+div.box-text{
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    width: 100%;
+    /*padding: 3px;*/
+    position: relative;
+    bottom: 0;
+    min-height: 108px;
+}
+div.box-text a{
+    text-decoration: none;
+}
+div.box-text a:hover{
+    text-decoration: none;
+}
+div.box-text h2{
+    color: #444444;
+    text-transform: none;
+    margin: 15px 0 0 0;
+    font-size: 30px;
+}
+div.box-text h3{
+    margin: 20px 0 0 0;
+    text-transform: none;
+    color: #444444;
+    font-weight: 600;
+    text-align: left;
+    font-size:16px;
+    /*letter-spacing: 2px;*/
+    /*text-align: justify;*/
+}
+div.box-text p{
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    font-size: 10.1px;
+    font-family: "Open sans", sans-serif;
+    letter-spacing: normal;
+    color: #4f4f4f;
+}
+section.aloldal{
+    padding:0;
+}
+div.cikk-kep{
+    position: relative;
+    text-align:center;
+}
+img.header-w{
+    position: absolute;
+    width: 100%;
+    bottom:0
+}
+img.header-img{
+    width: 100%;
+}
+h1.content-heading{
+    text-transform: uppercase;
+}
+h2.content-heading{
+    text-transform: none;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+div.aloldal,div.aloldal p,div.aloldal ul li,div.aloldal ol li{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+p.idezet, div.idezet{
+    margin: 20px 0;
+    font-size: 18px;
+}
+p.idezet span.sign, div.idezet span.sign {
+    font-family: 'Times New Roman', sans-serif;
+    color: #68d1c9;
+    float: left;
+    font-size: 120px;
+    /*line-height: 95px;*/
+    line-height: 0px;
+    margin-top: 43px;
+    margin-bottom: -4px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    letter-spacing: -10px;
+    /*transform: rotate(180deg);*/
+}
+div.aloldal a{
+    font-size: inherit;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+div.aloldal a:hover{
+    color: #059B90;
+}
+div.aloldal img.right, div.aloldal p img.right, p.aloldal img.right{
+    margin: 0 0 30px 30px;
+    float: right;
+}
+div.aloldal img.right-margin, div.aloldal p img.right-margin, p.aloldal img.right-margin{
+    margin: 30px 0 30px 30px;
+    float: right;
+}
+div.aloldal img.left, div.aloldal p img.left, p.aloldal img.left{
+    margin: 0 30px 30px 0;
+    float: left;
+}
+div.aloldal img.left-margin, div.aloldal p img.left-margin, p.aloldal img.left-margin{
+    margin: 30px 30px 30px 0;
+    float: left;
+}
+div.aloldal img.szeles, div.aloldal p img.szeles, p.aloldal img.szeles {
+    width:100%;
+    height: auto;
+    margin: 30px 0;
+}
+div.aloldal img.center, div.aloldal p img.center, p.aloldal img.center {
+    display: block;
+    margin: 30px auto;
+}
+@media screen and (max-width: 470px){
+    div.box-text{
+        min-height:10px;
+    }
+    /*div.box-text p{
+        display: none;
+    }*/
+    div.box-text h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    div.cikk-kep{
+        margin-top: 100px;
+    }
+}
+footer.footer{
+    background: #68d1c9;
+    padding: 25px;
+}
+footer .text-muted{
+    color: #fff;
+}
+
+footer a, footer .text-muted a{
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+footer a:hover, footer .text-muted a:hover{
+    text-decoration: underline;
+    font-size: inherit;
+    color: inherit;
+}
