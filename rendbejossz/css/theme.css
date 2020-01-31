@@ -578,8 +578,8 @@ footer {
 .footerbg{
   min-height: 800px;
   background: url("../img/bottombg.jpg");
+  background-color: white;
   background-size: cover;
-  background-attachment: fixed;
   background-position-x: center;
   background-repeat: no-repeat;
 }
