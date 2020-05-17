@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+##RewriteRule ^(.*)$ index.php?p=$1 [L]
+### Könyvtár listázás tiltása
+#IndexIgnore *
+# 403 almappák listázásának tiltása
+Options -Indexes
+RewriteRule ^.*\.inc$ - [F,L,NC]
