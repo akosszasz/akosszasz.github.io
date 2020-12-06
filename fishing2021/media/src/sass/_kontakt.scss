@@ -1,0 +1,56 @@
+.kontakt {
+	color: #fff;
+	min-height: 1700px;
+	background: #000204 url('../images/2019/bg-kontakt.jpg') 50% 100% no-repeat;
+	background-size: 100vw auto;
+	display: flex;
+	flex-direction: column;
+
+	.header::after {
+		display: none;
+	}
+
+	.footer {
+		background: none;
+	}
+
+	.main-content {
+		flex-grow: 1;
+	}
+
+	.szoveg {
+		h1,h2,h3,h4,h5,h6 {
+			font-weight: 700;
+			color: #fff;
+		}
+	}
+
+	.form-control {
+		background: rgba(255,255,255,.4);
+		border-color: transparent;
+		box-shadow: none;
+	}
+
+	.szoveg {
+		ul {
+			@extend .list-unstyled;
+			display: flex;
+			flex-wrap: wrap;
+
+			> li {
+				width: 25%;
+				flex-basis: 25%;
+				padding: 2em;
+				text-align: center;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-size: 30px;
+			}
+		}
+	}
+}

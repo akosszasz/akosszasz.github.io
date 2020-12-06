@@ -1,0 +1,87 @@
+@import '//fonts.googleapis.com/css?family=Prompt:300,600,700,900&subset=latin-ext';
+
+@import "bootstrap";
+@import "bootstrap-flexbox";
+@import "programtabla";
+
+body {
+	background: #07161f url('../images/2018/bg-hamarosan.jpg') 50% 0 no-repeat;
+	background-size: 100vw auto;
+	color: #fff;
+	font-size: 20px;
+}
+
+a {
+	display: inline-block;
+	margin: 1em 1em 3em;
+	transition: all .25s;
+}
+
+a, a:active, a:focus, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #a05f5f;
+}
+
+@media screen and (max-width: 1280px){
+	.fellepok .header::after{
+    	height: 135px!important;
+    }
+}
+
+@media screen and (max-width: 991px){
+	.table-responsive>.table>tbody>tr>th{
+    	white-space:normal;
+    }
+}
+
+@media (max-width: 767px){
+	body {
+		font-size: 14px;
+	}
+
+	.bubi-archivum,
+	.bubi-fooklub {
+		margin: 1em;
+	}
+}
+
+.fa {
+	font-size: 30px;
+	color: #fff;
+}
+
+.fa-facebook-official:hover {
+	color: #3b5999;
+}
+
+.fa-instagram:hover {
+	color: #e4405f;
+}
+
+.fa-youtube:hover {
+	color: #cd201f;
+}
+
+.tmp-cim {
+	color: #fff;
+	font-weight: 300;
+}
+
+.btn {
+	font-weight: 600;
+	font-size: 24px;
+
+	small {
+		font-weight: 300;
+		font-size: 16px;
+	}
+}
+
+.table-responsive {
+	overflow-y: hidden;
+}

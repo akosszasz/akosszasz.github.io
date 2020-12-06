@@ -1,0 +1,75 @@
+@media (max-width: $screen-md-max) {
+	.header {
+		padding: 0 30px;
+		height: 450px;
+		background-position: center -150px !important;
+
+		&-logo-img {
+			width: 150px;
+		}
+
+		&-menupont {
+			font-size: 16px;
+			margin: 0 4px;
+		}
+
+		&-hl-image {
+			height: 280px;
+		}
+
+		&-link {
+			font-size: 12px;
+
+			&+& {
+				margin-left: 20px;
+			}
+		}
+	}
+
+	.fooldal {
+		&-headliner {
+			font-size: 30px;
+		}
+
+		&-gasztro-szam {
+			font-size: 50px;
+		}
+
+		&-gasztro-item {
+			font-size: 20px;
+		}
+	}
+
+	.footer {
+		height: 350px;
+		background-size: auto 500px !important;
+	}
+
+	.kontakt .szoveg ul {
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 20px;
+		}
+	}
+
+	.nav-tabs>li>a {
+		font-size: 24px;
+	}
+
+	.jegy {
+		&-ticket {
+			width: 180px;
+			height: 180px;
+			flex-basis: 180px;
+			margin-right: $grid-gutter-width / 2;
+		}
+
+		&-ar,
+		&-nev {
+			font-size: 16px;
+		}
+
+		&.elfogyott &-ticket::before {
+			font-size: 18px;
+		}
+	}
+}

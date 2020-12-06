@@ -1,0 +1,13 @@
+addsite
+kohana-extra
+git-template
+.DS_Store
+*~
+*.swp
+coverage
+#build
+.AppleDouble
+._*
+userfiles
+.idea
+node_modules

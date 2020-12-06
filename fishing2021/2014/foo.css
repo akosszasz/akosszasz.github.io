@@ -1,0 +1,433 @@
+body, html { background-color: #007A01; }
+.sitemap-row-level	{ font-size: 80% }
+.layout_s 		{ width: auto;}
+
+/* safari problem */
+.page_content_iframe {
+width: 100%;
+height: auto;
+min-height: 200px;
+margin-top: 0;
+}
+
+
+
+
+
+.page_content_right, .event_bgr, .acc_block_box, .perform_box_sectors, .podujatie_detail_box .acc_block_box, .lostpass_name, .acc_scrollable_media .items,.zaplata-tiena-kosik, .zaplata-tiena, .login_box, .style-zaloziek, .registration_box, .regheader, 
+.login_button_text2, .regchange_header_l, .regchange_box, 
+.acc_scrollable_text, .event_data_box, .header_rozs_vyh, .button_box3, .layout_iframe, 
+.acc_line_place, .podujatie_popis, .podujatie_popis_r p { color:#ffffff; background: #007A01; }
+
+.podujatie_popis_r p { }
+.perform_box_sectors { }
+
+
+
+.podujatie_obr {width:102px; height:82px; background:#ffffff; padding:1px;}
+
+
+.list_box .neaktivne a, .list_box .neaktivne a:hover {
+color: #44BF15 !important;}
+
+.acc_line_buy a:link     {text-decoration:none; color:#DDFFD6}
+.acc_line_buy a:visited  {text-decoration:none; color:#00FF00;}
+.acc_line_buy a:hover    {text-decoration:underline; color:#00FF00;}
+.acc_line_buy a:active   {text-decoration:none; color:#00FF00;}
+
+a.graylink:link     {text-decoration:none; color:#00FF00;}
+a.graylink:visited  {text-decoration:none; color:#ABFDA9;}
+a.graylink:hover    {text-decoration:underline; color:#00FF00;}
+a.graylink:active   {text-decoration:none; color:#00FF00;}
+
+
+.podklad_podujatie:hover a.graylink 		{text-decoration:underline; color:#00FF00;}
+.event_data_box:hover 				{ background-color:#69BD00 }
+/* Head - Language */
+.menu_class_text,    a.font_dgrey:link       	{ color:#00FF00; text-decoration:underline; }
+.menu_class_text,    a.font_dgrey:visited    	{ color:#00FF00; text-decoration:underline; }
+.menu_class_text,    a.font_dgrey:hover      	{ color:#00FF00; text-decoration:underline; }
+.menu_class_text,    a.font_dgrey:active     	{ color:#00FF00; text-decoration:underline; }
+
+
+
+.acc_line_buy a.odkaz-vstupenky 		{ color: #DDFFD6 }
+.acc_line_buy a.odkaz-vstupenky:visited 	{ color: #DDFFD6 }
+.acc_line_buy a.odkaz-vstupenky:hover 		{ color: #DDFFD6 }
+.acc_line_buy a.odkaz-vstupenky:activated 	{ color: #DDFFD6 }
+
+
+
+/* Head - Rozsirene vyhladavanie */
+a.font_dgrey:link           {color:#00FF00; text-decoration:underline;}
+a.font_dgrey:visited        {color:#00FF00; text-decoration:underline;}
+a.font_dgrey:hover          {color:#00FF00; text-decoration:underline;}
+a.font_dgrey:active         {color:#00FF00; text-decoration:none;}
+
+.acc_line_date a.font_blue_bold:link       {color:#00FF00; text-decoration:none;}
+.acc_line_date a.font_blue_bold:visited    {color:#00FF00; text-decoration:none;}
+.acc_line_date a.font_blue_bold:hover      {color:#00FF00; text-decoration:underline;}
+.acc_line_date a.font_blue_bold:active     {color:#00FF00; text-decoration:none;}
+
+a.font_grey:link            {color:#00FF00; text-decoration:underline;}
+a.font_grey:visited         {color:#00FF00; text-decoration:underline;}
+a.font_grey:hover           {color:#00FF00; text-decoration:none; text-shadow: #69BD00 0 0 0; font-weight:normal;}
+a.font_grey:active          {color:#00FF00; text-decoration:none;}
+
+a.font_grey_soft:link       {color:#00FF00; text-decoration:underline;}
+a.font_grey_soft:visited    {color:#00FF00; text-decoration:underline;}
+a.font_grey_soft:hover      {color:#00FF00; text-decoration:underline;}
+a.font_grey_soft:active     {color:#00FF00; text-decoration:none; }
+
+
+   
+/* ROZSIRENE VYHLADAVANIE */
+.regchange_box {
+    border:1px solid #00FF00;
+}
+
+.search_box {
+    background: #323232;
+    border: 1px solid #00FF00;
+    background: #69BD00 url(../../images/partners/iframes/id48/bg_lista.jpg) top no-repeat;
+}
+
+.reg_name {
+    font-size: 12px;
+    color: #ffffff;
+}
+.search_tag_text {
+    background: #44BF15;
+}
+
+.search_selvalue select, option, input { color: #00FF00 }
+
+.regchange_header {
+    width: 100%;
+    height: auto;
+    padding: 4px 4px 6px 0px;
+    border-bottom: 0px solid #00FF00;
+}
+
+/* END - ROZSIRENE VYHLADAVANIE */
+
+.login_button_text {
+    color: #00FF00;
+}
+
+.board_block {
+    border: 0px solid #00FF00;
+    background: url(../../images/partners/iframes/id48/bg-panel1.png) top repeat-x;
+}
+
+/* icon login */
+.login_button_box .login_picture { width:30px; height:30px; background-image: url(../../images/partners/iframes/id66/icon-mojTP-0.png); float:left; /*position:absolute; top:0px; left:0px;*/}
+.login_button_box .logged_picture { width:30px; height:30px; background-image: url(../../images/partners/iframes/id66/icon-mojTP-1.png); float:left; /*position:absolute; top:0px; left:0px;*/}
+/* END - login */
+
+/* Border okolo obrazkov */
+.obrazok_bgr {border:1px solid #00FF00; padding: 2px}
+/* END - Border okolo obrazkov */
+
+/* HLADISKO - category_box */
+.category_box, .category_headline { color:#ffffff; background: #69BD00; }
+#nadContajner { background: #ffffff;}
+
+.place_data A.typ2 {color: #ffffff;}
+.place_data A.typ2:hover {color: #00FF00;}
+
+.place_data a{color: #ffffff;}
+.place_data a:hover,
+
+
+/* search.aspx */
+.event_line_list_time:hover { color:#00FF00; }
+.event_line_box:hover { background-color: #69BD00; }
+
+/* genre.aspx */
+.place_line {  background: #4B4B4B; color: #DBDBDB; }
+
+
+/* pagination  */
+.pagination .item { color:#00FF00; }
+
+
+/* login box, kosik box */
+.style-zaloziek  { border: 1px solid #00FF00; box-shadow: 0 0 0 0 #69BD00; }
+.zaplata-tiena, .zaplata-tiena-kosik { border-right: 1px solid #44BF15; }
+.login_box .label{  }
+.list_box2  a.graylink:link     {text-decoration:none; color:#00FF00;}
+.list_box2  a.graylink:visited  {text-decoration:none; color:#00FF00;}
+.list_box2  a.graylink:hover    {text-decoration:underline; color:#00FF00;}
+.list_box2  a.graylink:active   {text-decoration:none; color:#00FF00;}
+.cart_container2 .panel2 { color: #ffffff; }
+
+
+
+/* forgot.aspx */
+.lostpass_header    { border-bottom: 0px solid #1263B2; color: #ffffff; text-transform: uppercase; font-weight: bold; }
+.lostpass_box       { background: #69BD00; border: 1px solid #44BF15; }
+
+/* registration.aspx */
+.reg_header { border-bottom: 0px solid #1263B2; color: #ffffff; }
+.reg_text {padding-top: 9px;}    
+
+/* UniButtonTP */
+.UniButtonTP { border: 0px solid #FFF; }
+
+/* hide element */
+.category_box_s, .board_block_shadow, .reg_box_shadow, .lostpass_box_s, .log_box_shadow   { display: none; }
+.search_tag_shadow img  { display: none; }
+
+
+  /**************/
+ /* event.aspx */
+/**************/
+.titulka {color: #ffffff; background: #004920; border: 0px solid transparent}
+.titulka h1 { color: #ffffff } 
+.acc_line_date a.font_blue_bold:hover { color: #00FF00; }
+
+.event_line_date a:hover,
+.event_line_list_date a:hover, 
+.event_line_list_time a:hover {color: #00FF00;}
+
+.acc_block_box .odkaz-vstupenky { position: relative; top: -8px; right: 10px; font-size: 200%}
+
+.podujatie_detail_box .acc_line_date 	{ position: relative; top: 5px; left: 10px}
+.podujatie_detail_box .acc_line_place	{ position: relative; top: 5px; left: 10px}
+
+
+
+.podujatie_detail_box .acc_container_content { margin: 30px 0 }
+
+
+
+.acc_block div{background: #44BF15;  }
+.podujatie_detail_box .acc_block_box { border-bottom: 1px solid #00FF00; padding-bottom: 4px;}
+
+.podujatie_popis_r a:link 	{ color: #00FF00}
+.podujatie_popis_r a:visited 	{ color: #DDFFD6}
+.podujatie_popis_r a:hover 	{ color: #DDFFD6}
+.podujatie_popis_r a:active 	{ color: #DDFFD6}
+
+/* Detail podujatia - Accordions */
+.trigger a {color:#ffffff !important; border-bottom:1px solid #bcbcbc; font-size: 200%; }
+
+.trigger a:hover {color:#00FF00; background:#000;}
+
+h2.trigger a {color: #fffff}
+
+
+.acc_line_buy a.font_black_bold         { color: #DDFFD6}
+.acc_line_buy a.font_black_bold:hover   { color: #DDFFD6}
+.acc_line_buy a.font_black_bold:history   { color: #DDFFD6}
+.acc_line_buy a.font_black_bold:active   { color: #DDFFD6}
+.acc_line_date, a.font_blue_bold        { color: #44BF15;text-decoration:none;}
+.acc_line_date, a.font_blue_bold:hover  { color: #44BF15;text-decoration:none;}
+
+
+
+  /***************/
+ /* basket.aspx */
+/***************/
+
+/* basket header */
+.basket_header 	{ border-bottom: 1px solid #ffffff; margin-bottom: 10px; color: #c41a16; }
+.basket_box 	{ background-color: transparent }
+.cart_container { background-color: #808080 }
+
+ul.tabs li.active a:hover { background: #808080; border-bottom: 1px solid #c41a16; }
+
+.cart_bottom_button 		{  padding: 10px 0}
+.cart_bottom_button div b 	{ color: #ffffff }
+.cart_summary_value, .cart_summary_text { color: #000 } 
+.cart_bottom_button > div 	{  }
+
+ul.cart_tabs li a:link		{ background-color: #44BF15; color: #ffffff }
+ul.cart_tabs li a:visited 	{ background: #c41a16; color: #ffffff }
+ul.cart_tabs li a:hover 	{ background-color: #44BF15; background: #44BF15; color: #ffffff }
+ul.cart_tabs li a:active 	{ background-color: #c41a16; background: #c41a16; border-bottom: 0px solid #B7D7F5; }
+
+ul.cart_tabs li a.not 		{ background: #c7c7c7 }
+ul.cart_tabs li a.not:hover 	{ background-color: #c7c7c7; background: #c7c7c7 }
+
+
+.basket_box {width:auto; height:auto; background:#fff; border:1px solid #ababab; margin-top:20px; padding:20px; font-size:12px; line-height:18px} 
+ .basket_box_s {width:700px; height:13px; background:url(../images/logreg/reg_shadow.png) left top no-repeat;} 
+ .basket_header {width:auto; height:auto; padding:4px 4px 6px 0px; border-bottom:1px solid #1263b2; margin-bottom:10px; color:#424242; font-size:16px; text-transform:uppercase; font-weight:bold;}  
+ .basket_header2 {width:100%; height:auto; padding:4px 4px 6px 0px; border-bottom:1px solid #1263b2; margin-bottom:10px; color:#424242; font-size:16px; font-weight:bold;}  
+
+    .cart_tab_container {width:100%; margin: 20px auto;} 
+    ul.cart_tabs {margin:0; padding:0; float:left; list-style:none; height:auto; width:100%; font-size:16px; color:#000;}
+    ul.cart_tabs li {float:left; margin:0; padding:0; height:40px; line-height:27px; background:#ebebeb; overflow:hidden; position:relative;}
+    
+    ul.cart_tabs li a {text-decoration:none; color:#000; display:block; font-size:16px; padding:8px 20px; outline:none; font-weight:bold;}
+    ul.cart_tabs li a:hover {background:#d8d8d8;}	
+    ul.cart_tabs li.active, html ul.tabs li.active a:hover {background:#b7d7f5; border-bottom:1px solid #b7d7f5;}
+    
+    ul.cart_tabs li a.not {text-decoration:none; color:silver; display:block; font-size:16px; padding:8px 20px; outline:none; font-weight:bold; cursor:default}
+    ul.cart_tabs li a.not:hover {background:#ebebeb;}	
+
+
+.reg_box_right div		{ color: black}
+.list_box2 a.graylink:hover 	{ color: black}
+
+.acceptance_infotext, .acceptance_line { color:white } 
+.platby:hover 			{ background: #c41a16; color: #fff }
+
+a.font_blue_bold 		{ color: #E93434; }
+
+
+  /*********************/
+ /* performancep.aspx */
+/*********************/
+.event-name h1 	{ color: #c41a16} 
+.event-name 	{ border-bottom: 0px solid #44BF15; }
+.ciara_performance { border-bottom: 0px dotted #8A8A8A; }
+.performance_chart { background-color: #44BF15 }
+.performance_chart .panel .text2 { color: #ffffff }
+
+#dObalSektory { background-color: #ffffff }
+.place_name_partner { color: #00FF00 }
+.place_name_partner:hover { color: #ffffff }
+
+
+  /********************************************************/
+ /* performance_nseatp.aspx                              */
+/********************************************************/
+/*n-sector*/
+.n_performance_box {width:auto; height:auto; color: #ffffff; background-color: #60532f; padding: 5% 10% }
+    .n_performance_text {font-size:16px; font-weight:bold; text-align:left;/*padding: 2.20em 0 0 15%;*/}
+    .n_performance_text p {font-size: 80%; font-weight:normal; margin-top:1px;}
+    .n_performance_input {width: auto; height:auto; margin: 2% 0;}
+        .n_performance_input .input_value { width: 96%; padding: 2% }
+    .n_performance_text input[type="submit"]{ position: relative; top: 0px; left: -5px; }
+    .n_performance_cena_miesto {float:left; font-size:80%; font-weight:normal;}
+    .n_performance_cena_spolu {float:right; font-size:80%; font-weight:normal;  position: relative; top: 0; right: 0;}
+
+
+  /********************************************************/
+ /* selling_places.aspx                                  */
+/********************************************************/
+.pm_box_place	.titulka	{ background: #c41a16; }
+.pm_box_place	.titulka      h1{ color: #ffffff; }
+
+.pm_detail_headline		{ background: #c41a16; color: #ffffff }
+
+.cis-rezervacie input 		{ color: #ffffff; }
+.var-symbol     input 		{ color: #ffffff; }
+
+.selling_places_block 		{ background-color: #f1f1f1; }
+.title-v2 			{ background-color: #e1e1e1; }
+
+
+  /********************************************************/
+ /* booking.aspx                                         */
+/********************************************************/
+
+.detail_reser_bluetab, .detail_price_lineb	{ background-color: red !important ; } 
+
+body a:link	{ color: #c41a16 !important; text-decoration:none; }
+body a:hover	{ color: #ffffff; text-decoration:none; }
+html a:link	{ color: #c41a16!important; text-decoration:none; }
+html a:hover	{ color: #ffffff; text-decoration:none; }
+
+
+
+.detail_reser_infotext	 	{ color: #c41a16 }
+
+
+  /********************************************************/
+ /* booking.aspx                                         */
+/********************************************************/
+
+ .UniButtonTP {
+        
+        -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+        box-shadow:inset 0px 1px 0px 0px #f29c93;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+        background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+        background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+        background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+        background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+        background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+        
+        background-color:#fe1a00;
+        
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        
+        border:1px solid #d83526;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:12px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #b23e35;
+        
+    }
+    .UniButtonTP:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+        background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+        background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+        background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+        background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+        background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+        
+        background-color:#ce0100;
+    }
+    .UniButtonTP:active {
+        position:relative;
+        top:1px;
+    }
+
+
+  /********************************************************/
+ /* registration_change.aspx                             */
+/********************************************************/
+.regchange_tag_text { background: #E93434; }
+
+
+  /********************************************************/
+ /* TKLUB.aspx                                           */
+/********************************************************/
+.basket_header2 { border-bottom: 1px solid #E93434; }
+
+
+
+.reg_header, .cart_container2 .panel2 {color: #ffffff}
+
+
+  /********************************************************/
+ /* search.aspx ,   #nav-panel-v1                        */
+/********************************************************/
+
+#nav-panel-v1 { background: #000 url("../images/partners/id0/bg-nav-panel-v1.png") }
+#nav-panel-v1 li > ul > li { background-color: #ffffff; color: #ffffff }
+#nav-panel-v1 li:hover, #nav-panel-v1 li.subhover { background:#ffffff; color: #ffffff}
+#nav-panel-v1 a:link	{ color: #ffffff!important; text-decoration:none; }
+#nav-panel-v1 a:hover	{ color: #ffffff; text-decoration:none; }
+#nav-panel-v1 li li:hover { background: #E93434 }
+
+.event_box_media {float:left; width:102px; height:81px; border:0px solid #7a7a7a; padding:0px; margin:10px 6px 10px 7px; font-size:10px; color:#444444; text-align:center; overflow: hidden}
+
+.acc_container { width: 100%; height: auto; margin: 0 auto; }
+.acc_container .h2-event{ padding: 5px 10px; margin-bottom: 10px ;background:#027702; border-bottom: 1px solid #ffffff; font-size: 12px }
+.acc_container_content {margin: 0 0 5px; padding:0; overflow:hidden; font-size:11px; /*width:702px;*/ clear:both;}
+.acc_container_content .acc_block {padding:0px;}
+.acc_block_box{/*width:692px;*/ height:auto; background:#fff; margin-bottom:5px; font-size:11px; border-bottom:1px dotted #00FF00; padding-bottom:4px;}
+.acc_line_value {list-style:none;}
+.acc_line_date {width:33.3%; height:auto; font-weight:bold; text-align:left; float:left; display:block; color:#1870c5;}
+.acc_line_place {width:33.3%; height:auto; text-align:center; float:left; display:block; color:#00FF00; /*margin-left:6px;*/}
+.acc_line_place h2 {color:#e47100;}
+	.acc_line_buy {width:33.3%; height:auto; font-weight:bold; text-align:right; float:right; display:block; /*margin-left:6px;*/}

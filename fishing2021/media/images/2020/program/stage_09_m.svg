@@ -1,0 +1,46 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="647.6px" height="103.5px" viewBox="0 0 647.6 103.5" style="enable-background:new 0 0 647.6 103.5;" xml:space="preserve"
+	 preserveAspectRatio="none">
+<polygon style="fill:#191919;" points="641.2,97.8 3.2,90.9 17,18.4 623.3,13.5 "/>
+<polygon style="fill:#558EA7;" points="638,95.2 0,88.3 13.8,15.8 620.1,10.8 "/>
+<g>
+	<g>
+		<polygon style="fill:#0A232D;" points="14,72.6 9.8,94.7 173,96.5 173,98.3 7.6,96.5 12.3,72.2 		"/>
+		
+			<rect x="8" y="49.6" transform="matrix(0.1869 -0.9824 0.9824 0.1869 -35.5932 58.0953)" style="fill:#0A232D;" width="18.5" height="1.8"/>
+		
+			<rect x="632.4" y="19" transform="matrix(0.9782 -0.2075 0.2075 0.9782 5.612 132.3016)" style="fill:#0A232D;" width="1.8" height="40.8"/>
+		
+			<rect x="644.9" y="93.5" transform="matrix(0.9782 -0.2075 0.2075 0.9782 -6.2956 136.1661)" style="fill:#0A232D;" width="1.8" height="9.1"/>
+		
+			<rect x="405" y="-98" transform="matrix(1.087422e-02 -0.9999 0.9999 1.087422e-02 301.5175 504.6959)" style="fill:#0A232D;" width="1.8" height="395.8"/>
+		<path style="fill:#0A232D;" d="M642.1,80.9c-0.5,0.1-1.3-1.8-1.8-4.2c-0.5-2.4-0.5-4.5-0.1-4.6c0.5-0.1,1.3,1.8,1.8,4.2
+			C642.6,78.7,642.6,80.8,642.1,80.9z"/>
+		<path style="fill:#0A232D;" d="M185.9,97.5c0-0.5,2-0.9,4.5-0.9s4.5,0.5,4.5,1s-2,0.9-4.5,0.9S185.9,98,185.9,97.5z"/>
+		<path style="fill:#0A232D;" d="M616.7,102.2c0-0.5,2-0.9,4.5-0.9c2.5,0,4.5,0.5,4.5,1c0,0.5-2,0.9-4.5,0.9
+			C618.8,103.2,616.7,102.7,616.7,102.2z"/>
+	</g>
+	
+		<rect x="635.4" y="92" transform="matrix(1.088174e-02 -0.9999 0.9999 1.088174e-02 526.8987 737.5567)" style="fill:#0A232D;" width="1.8" height="21"/>
+</g>
+<polygon style="fill:#287189;" points="621.5,25.1 11.3,25.1 13.4,7.8 625.1,0 "/>
+<g>
+	<g>
+		<rect x="350.2" y="28.1" style="fill:#0A232D;" width="83.7" height="0.8"/>
+		<rect x="336.1" y="28.1" style="fill:#0A232D;" width="8.2" height="0.8"/>
+		<rect x="39.1" y="28.1" style="fill:#0A232D;" width="18.2" height="0.8"/>
+		<rect x="19.4" y="28.1" style="fill:#0A232D;" width="4.1" height="0.8"/>
+		<polygon style="fill:#0A232D;" points="449.4,28.1 623.4,28.1 623.6,26.5 624.4,26.6 624.1,28.9 449.4,28.9 		"/>
+		<rect x="72.8" y="28.1" style="fill:#0A232D;" width="247.7" height="0.8"/>
+		<ellipse style="fill:#0A232D;" cx="65" cy="28.5" rx="2" ry="0.4"/>
+		<ellipse style="fill:#0A232D;" cx="31.3" cy="28.5" rx="2" ry="0.4"/>
+		<path style="fill:#0A232D;" d="M439.6,28.5c0-0.2,0.9-0.4,2-0.4c1.1,0,2,0.2,2,0.4s-0.9,0.4-2,0.4
+			C440.5,28.9,439.6,28.7,439.6,28.5z"/>
+		<path style="fill:#0A232D;" d="M326.3,28.5c0-0.2,0.9-0.4,2-0.4s2,0.2,2,0.4s-0.9,0.4-2,0.4S326.3,28.7,326.3,28.5z"/>
+		<path style="fill:#0A232D;" d="M624.8,20.8c-0.2,0-0.3-0.9-0.1-2c0.2-1.1,0.5-2,0.7-1.9c0.2,0,0.3,0.9,0.1,2
+			C625.3,20,625,20.9,624.8,20.8z"/>
+	</g>
+	
+		<rect x="621.4" y="11.8" transform="matrix(0.1397 -0.9902 0.9902 0.1397 526.4761 630.4127)" style="fill:#0A232D;" width="9.3" height="0.8"/>
+</g>
+</svg>

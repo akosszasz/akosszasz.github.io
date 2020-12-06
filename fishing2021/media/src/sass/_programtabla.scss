@@ -1,0 +1,2710 @@
+.programtabla {
+	font-size: 18px;
+	border: 0 none;
+	background: #fff;
+	color: $text-color;
+
+	&-szinpad {
+		background: $cyan;
+
+		th,td {
+			font-weight: bold;
+			font-size: 28px;
+			text-transform: uppercase;
+			border: 0 !important;
+			color: #fff !important;
+		}
+	}
+
+	&-datumok {
+		background: $coral;
+
+		th,td {
+			font-weight: 300 !important;
+			color: $text-color !important;
+			text-transform: uppercase;
+			padding-top: 20px !important;
+			border: 0 none !important;
+
+			&:not(:first-child) {
+				border-left: 1px solid #fff !important;
+			}
+		}
+
+		strong {
+			font-weight: 900;
+		}
+	}
+
+	>tbody>tr>td,
+	>tbody>tr>th,
+	>tfoot>tr>td,
+	>tfoot>tr>th,
+	>thead>tr>td,
+	>thead>tr>th {
+		border: 0;
+	}
+
+	tbody {
+		>tr {
+			>th {
+				color: #f26e6b;
+				font-weight: bold;
+				border-bottom: 1px solid $coral;
+
+				>span {
+					font-weight: 300;
+					color: $text-color;
+				}
+			}
+
+			>td {
+				color: $text-color;
+				border-bottom: 1px solid $coral;
+			}
+		}
+	}
+
+	td{
+		cursor: pointer;
+	    transition: 0.4s all;
+	    &:hover{
+	    	background: #6cb7b9;
+	    }
+	}
+}
+
+.programtabla-youtube,
+.programtabla-leiras{
+    display: none;
+}
+
+.programtabla-datumok th{
+    width: 24%;
+}
+.programtabla-datumok th:first-child{
+    width: 4%;
+}
+
+.fellepo-popup{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    height: 0;
+    z-index: 20;
+}
+.fellepo-popup p{
+    color: #000;
+    padding-top: 15px;
+}
+.fellepo-popup>div{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 590px;
+    padding: 60px 15px 15px 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: #fff;
+    position: relative;
+}
+.fellepo-popup .close-popup{
+    color: #000;
+    font-size: 64px;
+    font-weight: normal;
+    font-family:'Prompt',sans-serif;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.fellepo-popup .iframe{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    width: 100%;
+}
+.fellepo-popup .iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/** programtabla **/
+@media screen and (min-width: 991px){
+    .stage tr th ~ td{
+        cursor: pointer;
+    }
+    .stage{
+        border: 0;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        background-repeat: no-repeat,no-repeat no-repeat;
+        background-size: 100% 100%,auto,100% 100%;
+        background-position: center center,center center,center center;
+        -webkit-box-sizing: initial;
+        -moz-box-sizing: initial;
+        box-sizing: initial;
+    }
+    .stage *{
+        -webkit-box-sizing: initial;
+        -moz-box-sizing: initial;
+        box-sizing: initial;
+    }
+    .stage,.stage td,.stage tr {
+        position: relative
+    }
+    .stage tr td,.stage tr th {
+        text-align: center;
+        padding: 0 10px;
+        border: 0;
+        font-family: 'Novecento sans wide Book', sans-serif;
+    }
+    .stage tr:nth-child(2) th:not(:first-child){
+        width: 22.5%;
+    }
+    .stage td {
+        vertical-align: middle;
+        border: 0;
+        width: 22.5%;
+        text-transform: lowercase;
+        font-size: 21px;
+        line-height: 24px;
+    }
+    .stage tbody tr.programtabla-hl th:first-child {
+        width: 100px;
+    }
+    .stage tr:first-child td {
+        height: 64px;
+        text-align: left;
+    }
+    .stage tr:first-child td strong {
+        display: inline-block;
+        background-size: 100% 100%;
+        height: 66px;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        line-height: 64px;
+        color: #fff;
+        font-family: 'Eveleth', sans-serif;
+        text-shadow: 4px 4px #081e24;
+        font-size: 36px;
+    }
+    .stage tr th {
+        height: 40px
+    }
+    .stage tr th strong {
+        display: inline-block;
+        margin: 0 auto;
+        background-repeat: no-repeat
+    }
+    .stage tr th:last-child strong {
+        display: block
+    }
+
+    .stage tr td:last-child {
+        padding-right: 60px
+    }
+    .stage tr th:first-child {
+        padding-left: 80px;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        font-size: 22px;
+    }
+    .stage tr th:nth-child(2) strong {
+        max-width: 124px;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        text-transform: lowercase;
+    }
+
+    .stage tr th:nth-child(3) strong {
+        max-width: 156px;
+        width: 100%;
+        height: 19px;
+        line-height: 19px;
+        text-transform: lowercase;
+    }
+
+    .stage tr th:nth-child(4) strong {
+        max-width: 122px;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        text-transform: lowercase;
+    }
+
+    .stage tr th:nth-child(5) strong {
+        max-width: 151px;
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        position: relative;
+        left: -20px;
+        text-transform: lowercase;
+    }
+
+    .stage_01 { 
+        background-image: url(../images/2020/program/stage_01_bg_over.svg?v=1),url(../images/2020/program/stage_01_bg_noise.png),url(../images/2020/program/stage_01_bg.svg);
+    }
+    .stage_01:before{
+        content: "";
+        width: 103px;
+        height: 147px;
+        background: url(../images/2020/program/stage_01_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 66px;
+        left: -20px;
+    }
+    .stage_01:after{
+        content: "";
+        width: 49px;
+        height: 63px;
+        background: url(../images/2020/program/stage_01_icons_02.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: -20px;
+        right: 150px;
+    }
+    .stage_01 tr td,.stage_01 tr th {
+        color: #fcefcd;
+    }
+
+    .stage_01 tbody tr:nth-child(3) td {
+        height: 85px
+    }
+
+    .stage_01 tbody tr:nth-child(6) td {
+        height: 72px
+    }
+
+    .stage_01 tbody tr:nth-child(9) td {
+        height: 72px;
+        padding-bottom: 58px
+    }
+
+    .stage_01 tr:first-child td strong {
+        background: url(../images/2020/program/stage_01_title.svg) no-repeat;
+        max-width: 382px;
+        height: 66px;
+        top: 0;
+        left: 50px;
+        background-size: 100% 100%;
+    }
+
+    .stage_01 tr th:nth-child(2) strong {
+        background-image: url(../images/2020/program/wed_01.svg);
+        color: #fff
+    }
+
+    .stage_01 tr th:nth-child(3) strong {
+        background-image: url(../images/2020/program/thu_01.svg);
+        color: #fff
+    }
+
+    .stage_01 tr th:nth-child(4) strong {
+        background-image: url(../images/2020/program/fri_01.svg);
+        color: #fff
+    }
+
+    .stage_01 tr th:nth-child(5) strong {
+        background-image: url(../images/2020/program/sat_01.svg);
+        color: #fff;
+    }
+
+    .stage_01 tr td:nth-child(2) {
+        padding-left: 26px
+    }
+
+    .stage_01 tr:nth-child(9) th:first-child{
+        padding-bottom: 58px;
+    }
+
+    .stage_01 tr:nth-child(3) td {
+        min-height: 85px
+    }
+
+    .stage_01 tr:nth-child(4) td,.stage_01 tr:nth-child(5) td {
+        min-height: 72px
+    }
+
+    .stage_01 tr:nth-child(3) td:nth-child(3):after,.stage_01 tr:nth-child(3) td:nth-child(5):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 300%;
+        background: url(../images/2020/program/stage_01_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_01 tr:nth-child(3) td:nth-child(4):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 300%;
+        background: url(../images/2020/program/stage_01_line_v02.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_01 tr:nth-child(6):after,.stage_01 tr:nth-child(9):after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 4px;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 6%;
+        max-width: 90%;
+        background-position: left;
+    }
+
+    .stage_01 tr:nth-child(6):after {
+        background: url(../images/2020/program/stage_01_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_01 tr:nth-child(9):after {
+        background: url(../images/2020/program/stage_01_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_02 {
+        background-image: url(../images/2020/program/stage_02_bg_over.svg?v=1),url(../images/2020/program/stage_02_bg_noise.png),url(../images/2020/program/stage_02_bg.svg);
+        margin-top: 40px;
+    }
+
+    .stage_02:before{
+        content: "";
+        width: 86px;
+        height: 131px;
+        background: url(../images/2020/program/stage_02_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 66px;
+        left: 10px;
+    }
+
+    .stage_02:after{
+        content: "";
+        width: 59px;
+        height: 62px;
+        background: url(../images/2020/program/stage_02_icons_02.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        right: 20px;
+        top: 66px;
+    }
+
+    .stage_02 tr td,.stage_02 tr th {
+        color: #671e0b;
+    }
+
+    .stage_02 tbody tr:nth-child(3) td {
+        height: 85px
+    }
+
+    .stage_02 tbody tr:nth-child(6) td {
+        height: 72px
+    }
+
+    .stage_02 tbody tr:nth-child(9) td {
+        height: 72px;
+    }
+
+    .stage_02 tbody tr:nth-child(12) td {
+        height: 72px;
+        padding-bottom: 58px
+    }
+
+    .stage_02 tr:first-child td strong {
+        background: url(../images/2020/program/stage_02_title.svg) no-repeat;
+        max-width: 382px;
+        top: 0;
+        left: 50px;
+        background-size: 100% 100%;
+    }
+
+    .stage_02 tr th:nth-child(2) strong {
+        background-image: url(../images/2020/program/wed_02.svg);
+        color: #fff
+    }
+
+    .stage_02 tr th:nth-child(3) strong {
+        background-image: url(../images/2020/program/thu_02.svg);
+        color: #fff
+    }
+
+    .stage_02 tr th:nth-child(4) strong {
+        background-image: url(../images/2020/program/fri_02.svg);
+        color: #fff
+    }
+
+    .stage_02 tr th:nth-child(5) strong {
+        background-image: url(../images/2020/program/sat_02.svg);
+        color: #fff;
+    }
+
+    .stage_02 tr td:nth-child(2) {
+        padding-left: 26px
+    }
+
+    .stage_02 tr:nth-child(12) th:first-child{
+        padding-bottom: 58px;
+    }
+
+    .stage_02 tr:nth-child(3) td {
+        min-height: 85px
+    }
+
+    .stage_02 tr:nth-child(4) td,.stage_02 tr:nth-child(5) td {
+        min-height: 72px
+    }
+
+    .stage_02 tr:nth-child(3) td:nth-child(3):after,.stage_02 tr:nth-child(3) td:nth-child(5):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 350%;
+        background: url(../images/2020/program/stage_02_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_02 tr:nth-child(3) td:nth-child(4):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 350%;
+        background: url(../images/2020/program/stage_02_line_v02.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_02 tr:nth-child(6):after,.stage_02 tr:nth-child(9):after,
+    .stage_02 tr:nth-child(12):after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 4px;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 6%;
+        max-width: 90%;
+        background-position: left;
+    }
+
+    .stage_02 tr:nth-child(6):after {
+        background: url(../images/2020/program/stage_02_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_02 tr:nth-child(9):after {
+        background: url(../images/2020/program/stage_02_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_02 tr:nth-child(12):after {
+        background: url(../images/2020/program/stage_02_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_03 {
+        background-image: url(../images/2020/program/stage_03_bg_over.svg?v=1),url(../images/2020/program/stage_03_bg_noise.png),url(../images/2020/program/stage_03_bg.svg);
+        margin-top: 40px;
+    }
+
+    .stage_03:before{
+        content: "";
+        width: 61px;
+        height: 140px;
+        background: url(../images/2020/program/stage_03_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 66px;
+        left: -20px;
+    }
+
+    .stage_03:after{
+        content: "";
+        width: 68px;
+        height: 58px;
+        background: url(../images/2020/program/stage_03_icons_02.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        right: 0;
+        top: 66px;
+    }
+
+    .stage_03 tr td,.stage_03 tr th {
+        color: #412b13;
+    }
+    .stage_03 tr:nth-child(2) th:not(:first-child){
+        width: 22.5%;
+    }
+
+    .stage_03 tbody tr:nth-child(3) td {
+        height: 85px
+    }
+
+    .stage_03 tbody tr:nth-child(6) td {
+        height: 72px
+    }
+
+    .stage_03 tbody tr:nth-child(9) td {
+        height: 72px;
+    }
+
+    .stage_03 tbody tr:nth-child(12) td {
+        height: 72px;
+    }
+
+    .stage_03 tbody tr:nth-child(15) td {
+        height: 72px;
+    }
+
+    .stage_03 tbody tr:nth-child(18) td {
+        height: 72px;
+        padding-bottom: 58px
+    }
+
+    .stage_03 tr:first-child td strong {
+        background: url(../images/2020/program/stage_03_title.svg) no-repeat;
+        max-width: 320px;
+        top: -10px;
+        left: -21px;
+        background-size: 100% 100%;
+    }
+
+    .stage_03 tr th:nth-child(2) strong {
+        background-image: url(../images/2020/program/wed_03.svg);
+        color: #412b13
+    }
+
+    .stage_03 tr th:nth-child(3) strong {
+        background-image: url(../images/2020/program/thu_03.svg);
+        color: #412b13
+    }
+
+    .stage_03 tr th:nth-child(4) strong {
+        background-image: url(../images/2020/program/fri_03.svg);
+        color: #412b13
+    }
+
+    .stage_03 tr th:nth-child(5) strong {
+        background-image: url(../images/2020/program/sat_03.svg);
+        color: #412b13;
+    }
+
+    .stage_03 tr td:nth-child(2) {
+        padding-left: 26px
+    }
+
+    .stage_03 tr:nth-child(18) th:first-child{
+        padding-bottom: 58px;
+    }
+
+    .stage_03 tr:nth-child(3) td {
+        min-height: 85px
+    }
+
+    .stage_03 tr:nth-child(4) td,.stage_03 tr:nth-child(5) td {
+        min-height: 72px
+    }
+
+    .stage_03 tr:nth-child(3) td:nth-child(3):after,.stage_03 tr:nth-child(3) td:nth-child(5):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 500%;
+        background: url(../images/2020/program/stage_03_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_03 tr:nth-child(3) td:nth-child(4):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 500%;
+        background: url(../images/2020/program/stage_03_line_v02.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_03 tr:nth-child(6):after,.stage_03 tr:nth-child(9):after,
+    .stage_03 tr:nth-child(12):after, .stage_03 tr:nth-child(15):after,
+    .stage_03 tr:nth-child(18):after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 4px;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 6%;
+        max-width: 90%;
+        background-position: left;
+    }
+
+    .stage_03 tr:nth-child(6):after {
+        background: url(../images/2020/program/stage_03_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_03 tr:nth-child(9):after {
+        background: url(../images/2020/program/stage_03_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_03 tr:nth-child(12):after {
+        background: url(../images/2020/program/stage_03_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 98% 100%;
+    }
+
+    .stage_03 tr:nth-child(15):after {
+        background: url(../images/2020/program/stage_03_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 97% 100%;
+    }
+
+    .stage_03 tr:nth-child(18):after {
+        background: url(../images/2020/program/stage_03_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 96% 100%;
+    }
+
+    .stage_04{
+        margin-top: 40px;
+        border: 0;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        -webkit-box-sizing: initial;
+        -moz-box-sizing: initial;
+        box-sizing: initial;
+    }
+    .stage_04:before{
+        content: "";
+        width: 82px;
+        height: 74px;
+        background: url(../images/2020/program/stage_04_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 300px;
+        left: -40px;
+    }
+    .stage_04:after{
+        position: absolute;
+        top: 7%;
+        left: -2%;
+        right: 0;
+        bottom: 0;
+        display: block;
+        content: "";
+        background-image: url(../images/2020/program/stage_04_bg_over.svg); 
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+        pointer-events: none;
+    }
+    .stage_03 tr:first-child td strong {
+        background: url(../images/2020/program/stage_03_title.svg) no-repeat;
+        max-width: 320px;
+        top: -10px;
+        left: -21px;
+        background-size: 100% 100%;
+    }
+
+    .stage_04 tr:first-child td strong span{
+    	font-size: 14px;
+    	font-family: Prompt,sans-serif;
+    	display: block;
+    	position: absolute;
+    	line-height: normal;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    bottom: 8px;
+    }
+
+    .stg-alter:before{
+        content: "";
+        width: 72px;
+        height: 277px;
+        background: url(../images/2020/program/stage_04_icons_02.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 0;
+        right: -32px;
+    }
+
+    .stg-alter>tbody>tr:nth-child(-n+3) td {
+        height: 80px;
+    }
+
+    .stg-alter>tbody>tr:nth-child(10) td {
+        height: 100px;
+    }
+
+    .stage_04 th, .stage_04 td{
+        border: 0;
+        color: #fcefcd;
+    }
+
+    .stage_04 table{
+        border: 0;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        background-repeat: no-repeat,no-repeat no-repeat;
+        background-size: 100% 100%,auto,100% 100%;
+        background-position: center center,center center,center center;
+        -webkit-box-sizing: initial;
+        -moz-box-sizing: initial;
+        box-sizing: initial;
+    }
+
+    .stage_04 tr:nth-child(2) td:first-child table {
+        background-image: url(../images/2020/program/stage_04_bg_01.svg); 
+    }
+
+    .stage_04 tr:nth-child(2) td:nth-child(2) table {
+        background-image: url(../images/2020/program/stage_04_bg_02.svg); 
+    }
+
+    .stage_04 tr:nth-child(2) td:last-child table {
+        background-image: url(../images/2020/program/stage_04_bg_03.svg); 
+    }
+    .stage_04 *{
+        -webkit-box-sizing: initial;
+        -moz-box-sizing: initial;
+        box-sizing: initial;
+    }
+    .stage_04,.stage_04 td,.stage_04 tr {
+        position: relative
+    }
+    .stage_04 table tr td,.stage_04 table tr th {
+        text-align: center;
+        padding: 0 10px;
+        border: 0;
+        font-family: 'Novecento sans wide Book', sans-serif;
+    }
+    .stage_04 table tr td:nth-child(2){
+        cursor: pointer;
+    }
+    .stg-alter tr td:first-child{
+        cursor: default;
+    }
+    .stage_04 table td {
+        vertical-align: middle;
+        border: 0;
+        text-transform: lowercase;
+        font-size: 21px;
+        line-height: 24px;
+    }
+    .stage_04>tbody>tr:first-child td strong {
+        background: url(../images/2020/program/stage_04_title.svg) no-repeat;
+        max-width: 418px;
+        top: 20px;
+        left: 0;
+        display: inline-block;
+        background-size: 100% 100%;
+        height: 75px;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        line-height: 64px;
+        color: #fff;
+        font-family: 'Eveleth', sans-serif;
+        text-shadow: 4px 4px #081e24;
+        font-size: 36px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(1) table tbody tr:first-child th strong {
+        background-image: url(../images/2020/program/wed_04.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        max-width: 124px;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        text-transform: lowercase;
+        margin-top: 30px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+     .stage_04>tbody>tr:nth-child(2)>td:nth-child(2) table tbody tr:first-child th strong {
+        background-image: url(../images/2020/program/thu_04.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        max-width: 156px;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        text-transform: lowercase;
+        margin-top: 30px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+     .stage_04>tbody>tr:nth-child(2)>td:nth-child(3) table tbody tr:first-child th:first-child strong {
+        background-image: url(../images/2020/program/fri_04.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        max-width: 122px;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        text-transform: lowercase;
+        margin-top: 30px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+     .stage_04>tbody>tr:nth-child(2)>td:nth-child(3) table tbody tr:first-child th:last-child strong {
+        background-image: url(../images/2020/program/sat_04.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        max-width: 151px;
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        position: relative;
+        left: -20px;
+        text-transform: lowercase;
+        margin-top: 30px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(1) table>tbody>tr>td:first-child{
+        padding-left: 60px;
+        text-align: left;
+        height: 80px;
+        width: 64px;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(2) table>tbody>tr>td:first-child{
+        padding-left: 30px;
+        text-align: left;
+        height: 48px;
+        width: 64px;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(3) table>tbody>tr>td:first-child{
+        padding-left: 30px;
+        text-align: left;
+        height: 70px;
+        width: 64px;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(1) table>tbody>tr:nth-last-child(3)>td,
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(2) table>tbody>tr:nth-last-child(3)>td,
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(3) table>tbody>tr:nth-last-child(3)>td{
+        padding-bottom: 58px;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(1) table>tbody>tr:nth-child(3n+5):after{
+        background: url(../images/2020/program/stage_04_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+        content: "";
+        width: 77%;
+        display: block;
+        height: 4px;
+        position: absolute;
+        left: 60px;
+        max-width: 77%;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(2) table>tbody>tr:nth-child(3n+5):after {
+        background: url(../images/2020/program/stage_04_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+        content: "";
+        width: 85%;
+        display: block;
+        height: 4px;
+        position: absolute;
+        left: 30px;
+        max-width: 85%;
+    }
+
+    .stage_04 table.stg_alter{
+        background: transparent!important;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(3) table>tbody>tr:nth-child(3n+5):after {
+        background: url(../images/2020/program/stage_04_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+        content: "";
+        width: 47%;
+        display: block;
+        height: 4px;
+        position: absolute;
+        left: 30px;
+        max-width: 47%;
+    }
+
+    .stg-alter tr:not(:first-child):after {
+        background: url(../images/2020/program/stage_04_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+        content: "";
+        width: 80%;
+        display: block;
+        height: 4px;
+        position: absolute;
+        left: 30px;
+        max-width: 80%;
+    }
+
+    .stage_04>tbody>tr:nth-child(2)>td:nth-child(3) table>tbody>tr:first-child th:nth-child(2):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 90%;
+        background: url(../images/2020/program/stage_04_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 30px;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+
+    .stage_05 {
+        background-image: url(../images/2020/program/stage_05_bg_over.svg?v=1),url(../images/2020/program/stage_05_bg_noise.png),url(../images/2020/program/stage_05_bg.svg);
+        margin-top: 40px;
+    }
+
+    .stage_05:before{
+        content: "";
+        width: 60px;
+        height: 137px;
+        background: url(../images/2020/program/stage_05_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 66px;
+        left: 20px;
+    }
+
+    .stage_05:after{
+        content: "";
+        width: 66px;
+        height: 57px;
+        background: url(../images/2020/program/stage_05_icons_02.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 66px;
+        right: 20px;
+    }
+
+
+    .stage_05 tr td,.stage_05 tr th {
+        color: #fcefcd;
+    }
+
+    .stage_05 tbody tr:nth-child(3) td {
+        height: 85px
+    }
+
+    .stage_05 tbody tr:nth-child(6) td {
+        height: 72px
+    }
+
+    .stage_05 tbody tr:nth-child(9) td {
+        height: 72px;
+    }
+
+    .stage_05 tbody tr:nth-child(12) td {
+        height: 72px;
+    }
+
+    .stage_05 tbody tr:nth-child(15) td {
+        height: 72px;
+        padding-bottom: 58px
+    }
+
+    .stage_05 tr:first-child td strong {
+        background: url(../images/2020/program/stage_05_title.svg) no-repeat;
+        max-width: 370px;
+        height: 66px;
+        top: -10px;
+        left: -21px;
+    }
+
+    .stage_05 tr th:nth-child(2) strong {
+        background-image: url(../images/2020/program/wed_05.svg);
+        color: #fcefcd
+    }
+
+    .stage_05 tr th:nth-child(3) strong {
+        background-image: url(../images/2020/program/thu_05.svg);
+        color: #fcefcd
+    }
+
+    .stage_05 tr th:nth-child(4) strong {
+        background-image: url(../images/2020/program/fri_05.svg);
+        color: #fcefcd
+    }
+
+    .stage_05 tr th:nth-child(5) strong {
+        background-image: url(../images/2020/program/sat_05.svg);
+        color: #fcefcd;
+    }
+
+    .stage_05 tr td:nth-child(2) {
+        padding-left: 26px
+    }
+
+    .stage_05 tr:nth-child(15) th:first-child{
+        padding-bottom: 58px;
+    }
+
+    .stage_05 tr:nth-child(3) td {
+        min-height: 85px
+    }
+
+    .stage_05 tr:nth-child(4) td,.stage_05 tr:nth-child(5) td {
+        min-height: 72px
+    }
+
+    .stage_05 tr:nth-child(3) td:nth-child(3):after,.stage_05 tr:nth-child(3) td:nth-child(5):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 450%;
+        background: url(../images/2020/program/stage_05_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_05 tr:nth-child(3) td:nth-child(4):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 450%;
+        background: url(../images/2020/program/stage_05_line_v02.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_05 tr:nth-child(6):after,.stage_05 tr:nth-child(9):after,
+    .stage_05 tr:nth-child(12):after, .stage_05 tr:nth-child(15):after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 4px;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 6%;
+        max-width: 90%;
+        background-position: left;
+    }
+
+    .stage_05 tr:nth-child(6):after {
+        background: url(../images/2020/program/stage_05_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_05 tr:nth-child(9):after {
+        background: url(../images/2020/program/stage_05_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_05 tr:nth-child(12):after {
+        background: url(../images/2020/program/stage_05_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_05 tr:nth-child(15):after {
+        background: url(../images/2020/program/stage_05_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_06 {
+        background-image: url(../images/2020/program/stage_06_bg_over.svg?v=1),url(../images/2020/program/stage_06_bg_noise.png),url(../images/2020/program/stage_06_bg.svg);
+        margin-top: 40px;
+    }
+
+    .stage_06:before{
+        content: "";
+        width: 101px;
+        height: 143px;
+        background: url(../images/2020/program/stage_06_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 66px;
+        left: -40px;
+    }
+
+    .stage_06:after{
+        content: "";
+        width: 74px;
+        height: 77px;
+        background: url(../images/2020/program/stage_06_icons_02.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        bottom: -20px;
+        left: 53%;
+    }
+
+
+    .stage_06 tr td,.stage_06 tr th {
+        color: #412b13;
+    }
+
+    .stage_06 tbody tr:nth-child(3) td {
+        height: 85px
+    }
+
+    .stage_06 tbody tr:nth-child(6) td {
+        height: 72px
+    }
+
+    .stage_06 tbody tr:nth-child(9) td {
+        height: 72px;
+    }
+
+    .stage_06 tbody tr:nth-child(12) td {
+        height: 72px;
+    }
+
+    .stage_06 tbody tr:nth-child(15) td {
+        height: 72px;
+    }
+
+    .stage_06 tbody tr:nth-child(18) td {
+        height: 72px;
+    }
+
+    .stage_06 tbody tr:nth-child(21) td {
+        height: 72px;
+        padding-bottom: 58px
+    }
+
+    .stage_06 tr:first-child td strong {
+        background: url(../images/2020/program/stage_06_title.svg) no-repeat;
+        max-width: 408px;
+        top: -10px;
+        left: -21px;
+    }
+
+    .stage_06 tr th:nth-child(2) strong {
+        background-image: url(../images/2020/program/wed_06.svg);
+        color: #412b13
+    }
+
+    .stage_06 tr th:nth-child(3) strong {
+        background-image: url(../images/2020/program/thu_06.svg);
+        color: #412b13
+    }
+
+    .stage_06 tr th:nth-child(4) strong {
+        background-image: url(../images/2020/program/fri_06.svg);
+        color: #412b13
+    }
+
+    .stage_06 tr th:nth-child(5) strong {
+        background-image: url(../images/2020/program/sat_06.svg);
+        color: #412b13;
+    }
+
+    .stage_06 tr td:nth-child(2) {
+        padding-left: 26px
+    }
+
+    .stage_06 tr:nth-child(21) th:first-child{
+        padding-bottom: 58px;
+    }
+
+    .stage_06 tr:nth-child(3) td {
+        min-height: 85px
+    }
+
+    .stage_06 tr:nth-child(4) td,.stage_06 tr:nth-child(5) td {
+        min-height: 72px
+    }
+
+    .stage_06 tr:nth-child(3) td:nth-child(3):after,.stage_06 tr:nth-child(3) td:nth-child(5):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 650%;
+        background: url(../images/2020/program/stage_06_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_06 tr:nth-child(3) td:nth-child(4):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 650%;
+        background: url(../images/2020/program/stage_06_line_v02.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_06 tr:nth-child(6):after,.stage_06 tr:nth-child(9):after,
+    .stage_06 tr:nth-child(12):after, .stage_06 tr:nth-child(15):after,
+    .stage_06 tr:nth-child(18):after, .stage_06 tr:nth-child(21):after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 4px;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 6%;
+        max-width: 90%;
+        background-position: left;
+    }
+
+    .stage_06 tr:nth-child(6):after {
+        background: url(../images/2020/program/stage_06_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_06 tr:nth-child(9):after {
+        background: url(../images/2020/program/stage_06_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_06 tr:nth-child(12):after {
+        background: url(../images/2020/program/stage_06_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 98% 100%;
+    }
+
+    .stage_06 tr:nth-child(15):after {
+        background: url(../images/2020/program/stage_06_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 97% 100%;
+    }
+
+    .stage_06 tr:nth-child(18):after {
+        background: url(../images/2020/program/stage_06_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 96% 100%;
+    }
+
+    .stage_06 tr:nth-child(21):after {
+        background: url(../images/2020/program/stage_06_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 96% 100%;
+    }
+
+    .stage_07 {
+        background-image: url(../images/2020/program/stage_07_bg_over.svg?v=1),url(../images/2020/program/stage_07_bg_noise.png),url(../images/2020/program/stage_07_bg.svg);
+        margin-top: 40px;
+    }
+
+    .stage_07:before{
+        content: "";
+        width: 93px;
+        height: 121px;
+        background: url(../images/2020/program/stage_07_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 20px;
+        right: -30px;
+    }
+
+    .stage_07 tr td,.stage_07 tr th {
+        color: #2a0f28;
+    }
+
+    .stage_07 tbody tr:nth-child(3) td {
+        height: 85px
+    }
+
+    .stage_07 tbody tr:nth-child(6) td {
+        height: 72px
+    }
+
+    .stage_07 tbody tr:nth-child(9) td {
+        height: 72px;
+        padding-bottom: 58px
+    }
+
+    .stage_07 tr:first-child td {
+        height: 64px;
+        text-align: left;
+    }
+
+    .stage_07 tr:first-child td strong {
+        background: url(../images/2020/program/stage_07_title.svg) no-repeat;
+        max-width: 343px;
+        top: 0;
+        left: 50px;
+    }
+
+    .stage_07 tr th:nth-child(2) strong {
+        background-image: url(../images/2020/program/wed_07.svg);
+        color: #fff
+    }
+
+    .stage_07 tr th:nth-child(3) strong {
+        background-image: url(../images/2020/program/thu_07.svg);
+        color: #fff
+    }
+
+    .stage_07 tr th:nth-child(4) strong {
+        background-image: url(../images/2020/program/fri_07.svg);
+        color: #fff
+    }
+
+    .stage_07 tr th:nth-child(5) strong {
+        background-image: url(../images/2020/program/sat_07.svg);
+        color: #fff;
+    }
+
+    .stage_07 tr td:nth-child(2) {
+        padding-left: 26px
+    }
+
+    .stage_07 tr:nth-child(9) th:first-child{
+        padding-bottom: 58px;
+    }
+
+    .stage_07 tr:nth-child(3) td {
+        min-height: 85px
+    }
+
+    .stage_07 tr:nth-child(4) td,.stage_07 tr:nth-child(5) td {
+        min-height: 72px
+    }
+
+    .stage_07 tr:nth-child(3) td:nth-child(3):after,.stage_07 tr:nth-child(3) td:nth-child(5):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 300%;
+        background: url(../images/2020/program/stage_07_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_07 tr:nth-child(3) td:nth-child(4):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 300%;
+        background: url(../images/2020/program/stage_07_line_v02.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_07 tr:nth-child(6):after,.stage_07 tr:nth-child(9):after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 4px;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 6%;
+        max-width: 90%;
+        background-position: left;
+    }
+
+    .stage_07 tr:nth-child(6):after {
+        background: url(../images/2020/program/stage_07_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_07 tr:nth-child(9):after {
+        background: url(../images/2020/program/stage_07_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_08 {
+        background-image: url(../images/2020/program/stage_08_bg_over.svg?v=1),url(../images/2020/program/stage_08_bg_noise.png),url(../images/2020/program/stage_08_bg.svg);
+        margin-top: 40px;
+    }
+
+    .stage_08:before{
+        content: "";
+        width: 164px;
+        height: 156px;
+        background: url(../images/2020/program/stage_08_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 90px;
+        left: -70px;
+    }
+    
+    .stage_08 tr td,.stage_08 tr th {
+        color: #704619;
+    }
+
+    .stage_08 tbody tr:nth-child(3) td {
+        height: 85px
+    }
+
+    .stage_08 tbody tr:nth-child(6) td {
+        height: 72px
+    }
+
+    .stage_08 tbody tr:nth-child(9) td {
+        height: 72px;
+        padding-bottom: 58px
+    }
+
+    .stage_08 tr:first-child td {
+        height: 64px;
+        text-align: left;
+    }
+
+    .stage_08 tr:first-child td strong {
+        background: url(../images/2020/program/stage_08_title.svg) no-repeat;
+        max-width: 308px;
+        top: 0;
+        left: 50px;
+    }
+
+    .stage_08 tr th:nth-child(2) strong {
+        background-image: url(../images/2020/program/wed_08.svg);
+        color: #fff
+    }
+
+    .stage_08 tr th:nth-child(3) strong {
+        background-image: url(../images/2020/program/thu_08.svg);
+        color: #fff
+    }
+
+    .stage_08 tr th:nth-child(4) strong {
+        background-image: url(../images/2020/program/fri_08.svg);
+        color: #fff
+    }
+
+    .stage_08 tr th:nth-child(5) strong {
+        background-image: url(../images/2020/program/sat_08.svg);
+        color: #fff;
+    }
+
+    .stage_08 tr td:nth-child(2) {
+        padding-left: 26px
+    }
+
+    .stage_08 tr:nth-child(9) th:first-child{
+        padding-bottom: 58px;
+    }
+
+    .stage_08 tr:nth-child(3) td {
+        min-height: 85px
+    }
+
+    .stage_08 tr:nth-child(4) td,.stage_08 tr:nth-child(5) td {
+        min-height: 72px
+    }
+
+    .stage_08 tr:nth-child(3) td:nth-child(3):after,.stage_08 tr:nth-child(3) td:nth-child(5):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 300%;
+        background: url(../images/2020/program/stage_08_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_08 tr:nth-child(3) td:nth-child(4):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 300%;
+        background: url(../images/2020/program/stage_08_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_08 tr:nth-child(6):after,.stage_08 tr:nth-child(9):after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 4px;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 6%;
+        max-width: 90%;
+        background-position: left;
+    }
+
+    .stage_08 tr:nth-child(6):after {
+        background: url(../images/2020/program/stage_08_line_h01.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_08 tr:nth-child(9):after {
+        background: url(../images/2020/program/stage_08_line_h02.svg) no-repeat;
+        background-position: left;
+        background-size: 100% 100%;
+    }
+
+    .stage_09 {
+        background-image: url(../images/2020/program/stage_09_bg_over.svg?v=1),url(../images/2020/program/stage_09_bg_noise.png),url(../images/2020/program/stage_09_bg.svg);
+        margin-top: 40px;
+    }
+
+    .stage_09:before{
+        content: "";
+        width: 56px;
+        height: 67px;
+        background: url(../images/2020/program/stage_09_icons_01.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: -30px;
+        left: 520px;
+    }
+
+    .stage_09:after{
+        content: "";
+        width: 157px;
+        height: 75px;
+        background: url(../images/2020/program/stage_09_icons_02.svg) no-repeat;
+        position: absolute;
+        display: block;
+        z-index: 1;
+        bottom: 0px;
+        right: -157px;
+    }
+
+    .stage_09 tr td,.stage_09 tr th {
+        color: #05222d;
+    }
+
+    .stage_09 tbody tr:nth-child(3) td {
+        height: 85px;
+        padding-bottom: 30px
+    }
+
+    .stage_09 tr:nth-child(3) th:first-child{
+        padding-bottom: 30px;
+    }
+
+    .stage_09 tr:first-child td strong {
+        background: url(../images/2020/program/stage_09_title.svg) no-repeat;
+        max-width: 453px;
+        top: 0;
+        left: 50px;
+    }
+
+    .stage_09 tr th:nth-child(2) strong {
+        background-image: url(../images/2020/program/wed_09.svg);
+        color: #fff
+    }
+
+    .stage_09 tr th:nth-child(3) strong {
+        background-image: url(../images/2020/program/thu_09.svg);
+        color: #fff
+    }
+
+    .stage_09 tr th:nth-child(4) strong {
+        background-image: url(../images/2020/program/fri_09.svg);
+        color: #fff
+    }
+
+    .stage_09 tr th:nth-child(5) strong {
+        background-image: url(../images/2020/program/sat_09.svg);
+        color: #fff;
+    }
+
+    .stage_09 tr td:nth-child(2) {
+        padding-left: 26px
+    }
+
+    .stage_09 tr:nth-child(3) td {
+        min-height: 85px
+    }
+
+    .stage_09 tr:nth-child(4) td,.stage_09 tr:nth-child(5) td {
+        min-height: 72px
+    }
+
+    .stage_09 tr:nth-child(3) td:nth-child(3):after,.stage_09 tr:nth-child(3) td:nth-child(5):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 70%;
+        background: url(../images/2020/program/stage_09_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .stage_09 tr:nth-child(3) td:nth-child(4):after {
+        content: "";
+        width: 4px;
+        display: block;
+        height: 70%;
+        background: url(../images/2020/program/stage_09_line_v01.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+    .stage sub{
+    	display: contents;
+    	padding-bottom: 10px;
+    }
+    .stage tr td,
+    .stg tr td:nth-child(2){
+    	-webkit-transition: 0.4s all;
+    	-moz-transition: 0.4s all;
+    	transition: 0.4s all;
+    }
+    .stage tr td:hover,
+    .stg tr td:nth-child(2):hover {
+	    color: #fff;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.hir-cim{
+        font-size:30px
+    }
+    .cikk a, .szoveg a{
+        word-break: break-all;
+    }
+    .stage{
+        background: #fff;
+        width: 100%;
+        max-width: 100%;
+        border: 0;
+    }
+    .stage td{
+        cursor: pointer;
+        -webkit-transition: 0.4s all;
+        -moz-transition: 0.4s all;
+        -ms-transition: 0.4s all;
+        transition: 0.4s all;
+    }
+    .stage th{
+        padding: 8px;
+        line-height: 1.42857;
+        vertical-align: top;
+    }
+    .stage-hl{
+        background:#6cb7b9
+    }
+    .programtabla-youtube,
+    .programtabla-leiras{
+        display: none;
+    }
+    .stage-hl td,.stage-hl th{
+        font-weight:700;
+        font-size:28px;
+        text-transform:uppercase;
+        border:0!important;
+        color:#fff!important
+    }
+    .programtabla-date th{
+        width: 24%;
+        white-space: nowrap;
+    }
+    .stage>tbody>tr>td br{
+        display: none;
+    }
+    .stage>tbody>tr>td{
+        white-space: nowrap;
+        padding: 8px;
+        line-height: 1.42857;
+        vertical-align: top;
+    }
+    .programtabla-date th:first-child{
+        width: 4%;
+    }
+    .programtabla-date{
+        background:#f4e9b9
+    }
+    .programtabla-date td,.programtabla-date th{
+        font-weight:300!important;
+        color:#1e1e1e!important;
+        text-transform:uppercase;
+        padding-top:20px!important;
+        border:0!important
+    }
+    .programtabla-date td:not(:first-child),.programtabla-date th:not(:first-child){
+        border-left:1px solid #fff!important
+    }
+    .programtabla-date strong{
+        font-weight:900
+    }
+    .stage>tbody>tr>td,.stage>tbody>tr>th,.stage>tfoot>tr>td,.stage>tfoot>tr>th,.stage>thead>tr>td,.stage>thead>tr>th{
+        border:0
+    }
+    .stage>tbody>tr>td{
+        border-right: 1px solid #fae6cb;
+    }
+    .stage tbody>tr>th{
+        color:#d6602b;
+        font-weight:700;
+        border-bottom:1px solid #fae6cb
+    }
+    .stage tbody>tr>th>span{
+        font-weight:300;
+        color:#1e1e1e
+    }
+    .stage tbody>tr>td{
+        color:#1e1e1e;
+        border-bottom:1px solid #fae6cb
+    }
+    .table-responsive{
+        border: 1px solid #94c1c4;
+    }
+    .stage_04{
+        background: #fff;
+        border: 0;
+    }
+    .stage_04 tr table{
+        background: #fff;
+        border: 0;
+    }
+    .stage_04 tr table td{
+        border: 0;
+        white-space: nowrap;
+        padding: 8px;
+        line-height: 1.42857;
+        vertical-align: top;
+        border-bottom: 1px solid #fae6cb;
+        border-right: 1px solid #fae6cb;
+    }
+    .stage_04 tr table tr:first-child{
+        background: #f4e9b9;
+    }
+    .stage_04 tr table tr:first-child th{
+        padding: 8px;
+        line-height: 1.42857;
+        vertical-align: top;
+    }
+    .stage_04 tr table tr:first-child th strong{
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: Prompt,sans-serif;
+    }
+    .stage_04 tr table tr td:first-child{
+        background: #fae6cb;
+        width: 60px;
+        color: #d6602b;
+        font-weight: 700;
+        border-bottom: 1px solid #fae6cb;
+    }
+    .stg-alter tbody tr:first-child{
+         background: #fff!important;
+    }
+    .footer-sm {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (min-width: 911px) and (max-width: 1259px){
+    .fooldal-headliners {
+        margin-top: 20vmin;
+    }
+}
+
+/* mobil napi bontas */
+
+@media (max-width: 991px){
+    .stage>tbody>tr:not(.programtabla-hl)>th:first-child{
+        z-index: 1;
+    }
+    .stage_outer{
+        overflow: hidden;
+        border: 0;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        background-repeat: no-repeat,no-repeat no-repeat;
+        background-size: 100% 100%,auto,100% 100%;
+        background-position: center center,center center,center center;
+        -webkit-box-sizing: initial;
+        -moz-box-sizing: initial;
+        box-sizing: initial;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .stage_m sub{
+    	display: block;
+    }
+    .stage_m{
+        background: transparent;
+    }
+
+    .stage_m>tbody>tr>td{
+        position: relative;
+        text-align: center;
+    }
+
+    .stage_m>tbody>tr:nth-child(n+4) td{
+        background-image: url(/media/images/2020/program/stage_01_line_h01.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 1px;
+        background-position: top left;
+        position: relative;
+    }
+
+    .stage_m>tbody>tr:nth-child(n+3) td:not(:last-child):after{
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        display: block;
+        top: 0;
+        right: 0;
+        background-image: url(/media/images/2020/program/stage_01_line_v01.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .stage > tbody > tr:nth-child(n+4) > th:first-child{
+        background-image: url(/media/images/2020/program/stage_01_line_h01.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top left;
+    }
+
+    .stage_m tr th{
+        text-align: center;
+    }
+    .stage_m tr th strong{
+        font-family: 'Novecento sans wide Book', sans-serif;
+    }
+    .stage_m tr th:nth-child(2) strong {
+        display: inline-block;
+        max-width: 100%;
+        text-transform: lowercase;
+        padding: 3px 10px;
+        background-size: 100% 100%;
+    }
+
+    .stage_m tr th:nth-child(3) strong {
+        display: inline-block;
+        max-width: 100%;
+        text-transform: lowercase;
+        padding: 3px 10px;
+        background-size: 100% 100%;
+    }
+
+    .stage_m tr th:nth-child(4) strong {
+        display: inline-block;
+        max-width: 100%;
+        text-transform: lowercase;
+        padding: 3px 10px;
+        background-size: 100% 100%;
+    }
+
+    .stage_m tr th:nth-child(5) strong {
+        max-width: 100%;
+        display: inline-block;
+        text-transform: lowercase;
+        padding: 3px 10px;
+        background-size: 100% 100%;
+    }
+    .stage_cont{
+        overflow-y: hidden;
+        margin: 0 20px;
+
+    }
+
+    .stage tbody>tr>td{
+        border: 0;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .programtabla-date{
+        background: transparent;
+    }
+    .programtabla-hl>td:first-child{
+        background: transparent;
+        text-align: left;
+        color: #fff;
+    }
+    .programtabla-hl strong{
+        display: inline-block;
+        padding: 3px 10px;
+        margin-left: -8px;
+        text-shadow: 2px 2px #000;
+    }
+    .programtabla-date td, .programtabla-date th{
+        padding-top: 0!important;
+    }
+
+    .programtabla-date td:not(:first-child), .programtabla-date th:not(:first-child){
+        border:0!important;
+    }
+
+    .stage_m>tbody>tr:not(:first-child):after{
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        background: url(/media/images/2020/program/stage_01_line_h01.svg) no-repeat;
+        background-position: top left;
+    }
+
+    .stage_01 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_01_title.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .stage_outer_01{
+        background-image: url(/media/images/2020/program/stage_01_m.svg);
+    }
+    .stage_cont_01{
+        height: 250px;
+    }
+
+    .stage_01 tbody>tr>th,
+    .stage_01 tbody>tr>td{
+        color: #fcefcd;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+
+    .stage_01>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #6c9fa5;
+    }
+
+    .stage_01 tr th:nth-child(2) strong {
+        background-image: url(/media/images/2020/program/wed_01.svg);
+        color: #fff
+    }
+
+    .stage_01 tr th:nth-child(3) strong {
+        background-image: url(/media/images/2020/program/thu_01.svg);
+        color: #fff
+    }
+
+    .stage_01 tr th:nth-child(4) strong {
+        background-image: url(/media/images/2020/program/fri_01.svg);
+        color: #fff
+    }
+
+    .stage_01 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_01.svg);
+        color: #fff;
+    }
+
+    .stage_cont_01:before {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_01_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 50px;
+        left: -5px;
+        z-index: 2;
+    }
+    .stage_cont_01:after {
+        content: "";
+        width: 20px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_01_icons_02.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: -15px;
+        right: 50px;
+        z-index: 2;
+    }
+    /****************/
+
+    .stage_02 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_02_title.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .stage_outer_02{
+        background-image: url(/media/images/2020/program/stage_02_m.svg);
+    }
+    .stage_cont_02{
+        height: 280px;
+    }
+
+    .stage_02 tbody>tr>th,
+    .stage_02 tbody>tr>td{
+        color: #671e0b;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+
+    .stage_02>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #f3bfb4;
+    }
+
+    .stage_02 tr th:nth-child(2) strong {
+        background-image: url(/media/images/2020/program/wed_02.svg);
+        color: #fff
+    }
+
+    .stage_02 tr th:nth-child(3) strong {
+        background-image: url(/media/images/2020/program/thu_02.svg);
+        color: #fff
+    }
+
+    .stage_02 tr th:nth-child(4) strong {
+        background-image: url(/media/images/2020/program/fri_02.svg);
+        color: #fff
+    }
+
+    .stage_02 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_02.svg);
+        color: #fff;
+    }
+    .stage_cont_02:before {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_02_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 50px;
+        left: 0px;
+        z-index: 2;
+    }
+    .stage_cont_02:after {
+        content: "";
+        width: 30px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_02_icons_02.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 20px;
+        right: 0;
+        z-index: 2;
+    }
+
+    /****************/
+
+    .stage_03 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_03_title.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .stage_outer_03{
+        background-image: url(/media/images/2020/program/stage_03_m.svg);
+    }
+    .stage_cont_03{
+        height: 340px;
+    }
+
+    .stage_03 tbody>tr>th,
+    .stage_03 tbody>tr>td{
+        color: #412b13;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+
+    .stage_03>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #f2bf6d;
+    }
+
+    .stage_03 tr th:nth-child(2) strong {
+        background-image: url(/media/images/2020/program/wed_03.svg);
+        color: #412b13
+    }
+
+    .stage_03 tr th:nth-child(3) strong {
+        background-image: url(/media/images/2020/program/thu_03.svg);
+        color: #412b13
+    }
+
+    .stage_03 tr th:nth-child(4) strong {
+        background-image: url(/media/images/2020/program/fri_03.svg);
+        color: #412b13
+    }
+
+    .stage_03 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_03.svg);
+        color: #412b13;
+    }
+    .stage_cont_03:before {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_03_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 38px;
+        left: -5px;
+        z-index: 2;
+    }
+    .stage_cont_03:after {
+        content: "";
+        width: 30px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_03_icons_02.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 8px;
+        right: 0;
+        z-index: 2;
+    }
+    .stage_03 tr:not(.programtabla-hl) td strong{
+    	display: block;
+    }
+
+    /****************/
+
+    .stage_04 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_04_title.svg) no-repeat;
+        background-size: 100% 100%;
+        margin-top: 0;
+    }
+    .stage_outer_04{
+        background-image: url(/media/images/2020/program/stage_04_bg_03.svg);
+    }
+    .stage_cont_04{
+        height: 660px;
+    }
+
+    .stage_04 tr table,
+    .stage_04 tr table tr:first-child,
+    .programtabla-hl,
+    .stage_04 tr table tr td:first-child{
+        background: transparent;
+    }
+    .stage_04 td,
+    .stage_04 th{
+        border: 0;
+    }
+
+    .stage_04 tbody>tr>th,
+    .stage_04 tbody>tr>td{
+        color: #fcefcd;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+    .stage_04>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #ee7b48;
+    }
+
+    .stage_04 tr td:nth-child(1) table tr:first-child th strong {
+        background-image: url(/media/images/2020/program/wed_04.svg);
+        color: #fcefcd;
+        display: inline-block;
+        max-width: 100%;
+        text-transform: lowercase;
+        padding: 3px 10px;
+        background-size: 100% 100%;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        margin-left: 30px;
+    }
+
+    .stage_04 tr td:nth-child(2) table tr:first-child th strong {
+        background-image: url(/media/images/2020/program/thu_04.svg);
+        color: #fcefcd;
+        display: inline-block;
+        max-width: 100%;
+        text-transform: lowercase;
+        padding: 3px 10px;
+        background-size: 100% 100%;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        margin-left: 30px;
+    }
+
+    .stage_04 tr td:nth-child(3) table tr:first-child th strong {
+        background-image: url(/media/images/2020/program/fri_04.svg);
+        color: #fcefcd;
+        display: inline-block;
+        max-width: 100%;
+        text-transform: lowercase;
+        padding: 3px 10px;
+        background-size: 100% 100%;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        margin-left: 30px;
+    }
+
+    .stage_04 tr td:nth-child(-n+3) table tr:not(:nth-child(2)) td{
+        background-image: url(/media/images/2020/program/stage_04_line_h01.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top left;
+        position: relative;
+    }
+
+    .stage_04 tr td table tr td{
+        position: relative;
+    }
+
+    .stage_04 tr td:nth-child(-n+3) table tr:not(:nth-child(1)) td:last-child:after{
+        background-image: url(/media/images/2020/program/stage_04_line_v01.svg);
+        content: "";
+        width: 1px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top left;
+    }
+
+    .stage_04 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_04.svg);
+        color: #fcefcd;
+    }
+
+    .stage_04 .programtabla-hl strong span{
+        font-size: 12px;
+        display: block;
+    }
+
+    .stage_04 tr table tr td:first-child{
+        border: 0;
+        color: #fae6cb;
+    }
+
+    .stage_04 tr table td{
+        border: 0;
+    }
+
+    .stage_04 .stg-alter tbody tr:first-child{
+        background: transparent!important;
+    }
+    .stage_cont_04:before {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_04_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 30px;
+        left: 0;
+        z-index: 2;
+    }
+    .stage_cont_04:after {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_04_icons_02.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 8px;
+        right: 0;
+        z-index: 2;
+    }
+
+    /****************/
+
+    .stage_05 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_05_title.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .stage_outer_05{
+        background-image: url(/media/images/2020/program/stage_05_m.svg);
+    }
+    .stage_cont_05{
+        height: 310px;
+    }
+
+    .stage_05 tbody>tr>th,
+    .stage_05 tbody>tr>td{
+        color: #fcefcd;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+
+    .stage_05>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #ee7b48;
+    }
+
+    .stage_05 tr th:nth-child(2) strong {
+        background-image: url(/media/images/2020/program/wed_05.svg);
+        color: #fcefcd
+    }
+
+    .stage_05 tr th:nth-child(3) strong {
+        background-image: url(/media/images/2020/program/thu_05.svg);
+        color: #fcefcd
+    }
+
+    .stage_05 tr th:nth-child(4) strong {
+        background-image: url(/media/images/2020/program/fri_05.svg);
+        color: #fcefcd
+    }
+
+    .stage_05 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_05.svg);
+        color: #fcefcd;
+    }
+    .stage_cont_05:before {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_05_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 35px;
+        left: 0;
+        z-index: 2;
+    }
+    .stage_cont_05:after {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_05_icons_02.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 15px;
+        right: 0;
+        z-index: 2;
+    }
+
+    /***********/
+
+    .stage_06 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_06_title.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .stage_outer_06{
+        background-image: url(/media/images/2020/program/stage_06_m.svg);
+    }
+    .stage_cont_06{
+        height: 380px;
+    }
+
+    .stage_06 tbody>tr>th,
+    .stage_06 tbody>tr>td{
+        color: #122f1b;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+
+    .stage_06>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #b3d7bb;
+    }
+
+    .stage_06 tr th:nth-child(2) strong {
+        background-image: url(/media/images/2020/program/wed_06.svg);
+        color: #fcefcd
+    }
+
+    .stage_06 tr th:nth-child(3) strong {
+        background-image: url(/media/images/2020/program/thu_06.svg);
+        color: #fcefcd
+    }
+
+    .stage_06 tr th:nth-child(4) strong {
+        background-image: url(/media/images/2020/program/fri_06.svg);
+        color: #fcefcd
+    }
+
+    .stage_06 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_06.svg);
+        color: #fcefcd;
+    }
+    .stage_cont_06:before {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_06_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 35px;
+        left: 0;
+        z-index: 2;
+    }
+    .stage_cont_06:after {
+        content: "";
+        width: 20px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_06_icons_02.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        bottom: -20px;
+        left: 52%;
+        z-index: 2;
+    }
+
+    /***********/
+
+    .stage_07 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_07_title.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .stage_outer_07{
+        background-image: url(/media/images/2020/program/stage_07_m.svg);
+    }
+    .stage_cont_07{
+        height: 250px;
+    }
+
+    .stage_07 tbody>tr>th,
+    .stage_07 tbody>tr>td{
+        color: #122f1b;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+
+    .stage_07>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #d0afcd;
+    }
+
+    .stage_07 tr th:nth-child(2) strong {
+        background-image: url(/media/images/2020/program/wed_07.svg);
+        color: #2a0f28
+    }
+
+    .stage_07 tr th:nth-child(3) strong {
+        background-image: url(/media/images/2020/program/thu_07.svg);
+        color: #2a0f28
+    }
+
+    .stage_07 tr th:nth-child(4) strong {
+        background-image: url(/media/images/2020/program/fri_07.svg);
+        color: #2a0f28
+    }
+
+    .stage_07 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_07.svg);
+        color: #2a0f28;
+    }
+    .stage_cont_07:before {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_07_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    /***********/
+
+    .stage_08 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_08_title.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .stage_outer_08{
+        background-image: url(/media/images/2020/program/stage_08_m.svg);
+    }
+    .stage_cont_08{
+        height: 240px;
+    }
+
+    .stage_08 tbody>tr>th,
+    .stage_08 tbody>tr>td{
+        color: #704619;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+
+    .stage_08>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #efd8bc;
+    }
+
+    .stage_08 tr th:nth-child(2) strong {
+        background-image: url(/media/images/2020/program/wed_08.svg);
+        color: #fff
+    }
+
+    .stage_08 tr th:nth-child(3) strong {
+        background-image: url(/media/images/2020/program/thu_08.svg);
+        color: #fff
+    }
+
+    .stage_08 tr th:nth-child(4) strong {
+        background-image: url(/media/images/2020/program/fri_08.svg);
+        color: #fff
+    }
+
+    .stage_08 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_08.svg);
+        color: #fff;
+    }
+    .stage_cont_08:before {
+        content: "";
+        width:50px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_08_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: 35px;
+        left: 0;
+        z-index: 2;
+    }
+
+
+    /***********/
+
+    .stage_09 .programtabla-hl strong{
+        background: url(/media/images/2020/program/stage_09_title.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .stage_outer_09{
+        background-image: url(/media/images/2020/program/stage_09_m.svg);
+    }
+    .stage_cont_09{
+        height: 160px;
+    }
+
+    .stage_09 tbody>tr>th,
+    .stage_09 tbody>tr>td{
+        color: #05222d;
+        font-family: 'Novecento sans wide Book', sans-serif;
+        border-bottom: 0;
+    }
+
+    .stage_09>tbody>tr:not(.programtabla-hl)>th:first-child{
+        background-color: #538da7;
+    }
+
+    .stage_09 tr th:nth-child(2) strong {
+        background-image: url(/media/images/2020/program/wed_09.svg);
+        color: #fff
+    }
+
+    .stage_09 tr th:nth-child(3) strong {
+        background-image: url(/media/images/2020/program/thu_09.svg);
+        color: #fff
+    }
+
+    .stage_09 tr th:nth-child(4) strong {
+        background-image: url(/media/images/2020/program/fri_09.svg);
+        color: #fff
+    }
+
+    .stage_09 tr th:nth-child(5) strong {
+        background-image: url(/media/images/2020/program/sat_09.svg);
+        color: #fff;
+    }
+
+    .stage_cont_09:before {
+        content: "";
+        width: 40px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_09_icons_02.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .stage_cont_09:after {
+        content: "";
+        width: 20px;
+        height: 60px;
+        background: url(/media/images/2020/program/stage_09_icons_01.svg) no-repeat;
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        top: -10px;
+        right: 20%;
+        z-index: 2;
+    }
+}

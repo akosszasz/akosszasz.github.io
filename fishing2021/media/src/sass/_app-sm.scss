@@ -1,0 +1,11 @@
+@media (max-width: $screen-sm-max) {
+	.header {
+		&-menupont {
+			font-size: 18px;
+		}
+
+		&-link {
+			font-size: 16px;
+		}
+	}
+}

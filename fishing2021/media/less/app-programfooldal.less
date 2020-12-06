@@ -1,0 +1,156 @@
+@images-url: "../images/programfooldal/";
+
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,600,700,900&subset=latin-ext');
+@import "bootstrap/bootstrap";
+
+@font-family-sans-serif: 	'Prompt', sans-serif;
+@headings-font-family:    	@font-family-sans-serif;
+@font-size-base:          	18px;
+@link-color:				#49c7a5;
+@link-hover-color:			darken(@link-color, 10%);
+@link-hover-decoration:		none;
+@text-color: 				#3f3f40;
+
+@zold:						#49c7a5;
+@piros:						#ef5f5f;
+@sarga:						#eb9a22;
+
+html {
+	height: 100%;
+	font-size: @font-size-base;
+}
+
+body {
+	background: url("@{images-url}body-bg-top.png") 50% 0 repeat-x,
+		url("@{images-url}body-bg.jpg") 50% 0 no-repeat;
+	background-attachment: scroll,fixed;
+	background-size: auto, 100vw auto;
+	background-color: #2f2e2e;
+	position: relative;
+	min-height: 100%;
+	text-transform: uppercase;
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 100;
+		height: 127px;
+		background: url("@{images-url}body-bg-bottom.png") 50% 100% no-repeat;
+	}
+}
+
+a {
+	.transition(all .2s ease-out);
+}
+
+.header-logo {
+	margin: 2.5em auto 1em;
+}
+
+.header-title {
+	text-align: center;
+	font-weight: 900;
+	color: #fff;
+	font-size: 3.5em;
+	margin: 1rem auto;
+}
+
+.article-container {
+	background: #fff;
+	padding-top: 3rem;
+	padding-bottom: 10rem;
+}
+
+section {
+	margin-bottom: 2rem;
+}
+
+.jegy-link {
+	font-size: 3em;
+	font-weight: 900;
+
+	small {
+		font-size: 1rem;
+		display: block;
+		line-height: 1;
+		font-weight: 700;
+	}
+}
+
+.table {
+	font-weight: 700;
+	border: 0 !important;
+
+	td,th {
+		border: 0 !important;
+	}
+
+	.title>th {
+		background: @piros !important;
+		font-weight: 900;
+		padding: .25em 1em 0;
+		font-size: 2.7rem;
+	}
+
+	.margin {
+		height: 3rem;
+	}
+
+	>thead>tr>th,
+	>tbody>tr>th {
+		font-size: 2.1rem;
+		font-weight: 600;
+		line-height: 1;
+		white-space: nowrap;
+
+		strong {
+			font-weight: 900;
+		}
+
+		&.zold {
+			background: @zold;
+			color: #fff;
+		}
+
+		&.sarga {
+			background: @sarga;
+			color: #fff;
+		}
+	}
+}
+
+.ido {
+	color: @zold;
+}
+
+@media(max-width: @screen-xs-max) {
+	body {
+		font-size: 14px;
+	}
+
+	.header-title {
+		font-size: 2.5em;
+	}
+
+	.jegy-link {
+		font-size: 2em;
+	}
+
+	.article-container {
+		padding-top: 0;
+	}
+
+	.table-responsive {
+		border-color: @sarga;
+	}
+
+	.table>tbody>tr>th,
+	.table>thead>tr>th,
+	.table .title>th {
+		font-size: 1.5em;
+	}
+}

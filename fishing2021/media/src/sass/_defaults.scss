@@ -1,0 +1,77 @@
+@mixin default-transition() {
+	@include transition(all .25s ease-in-out);
+}
+
+html, body {
+	min-height: 100%;
+}
+
+a {
+	@include default-transition;
+}
+
+.inverz {
+	color: $text-color;
+
+	&:focus, &:hover {
+		color: $brand-primary;
+	}
+}
+
+@for $n from 14 through 24 {
+	.font-#{$n} {
+		font-size: #{$n}px;
+	}
+}
+
+.font-heading {
+	font-family: $headings-font-family;
+}
+
+.font-sans-serif {
+	font-family: $font-family-sans-serif;
+}
+
+@mixin hover-nagyitas() {
+	@include default-transition();
+
+	&:hover, &:focus {
+		@include scale(1.05);
+	}
+}
+
+.nomargin {
+	margin: 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+@each $name, $color in  (white, #fff),
+						(primary, $brand-primary),
+						(primary2, #b49970) {
+	.bg-#{$name} {
+		background-color: $color;
+	}
+}
+
+@each $name, $color in  (black, #000),
+						(cyan, $cyan),
+						(default, $text-color),
+						(white, #fff),
+						(primary2, #b49970) {
+	.text-#{$name} {
+		color: $color;
+	}
+}
+
+@each $weight in 300,600,700,900 {
+	.font-weight-#{$weight} {
+		font-weight: $weight;
+	}
+}
+
+$kocka-piros: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 355 61' width='100%25' height='100%25' preserveAspectRatio='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23d6602b' d='M354.7,3.6l-8-2v56.1l5.6-2.5L354.7,3.6z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23d6602b' d='M0.5,0.1l343,1.5v56.1L8.5,60.3L0.5,0.1z'/%3E%3C/svg%3E");
+$kocka-zold:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 355 61' width='100%25' height='100%25' preserveAspectRatio='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23134555' d='M354.7,3.6l-8-2v56.1l5.6-2.5L354.7,3.6z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23134555' d='M0.5,0.1l343,1.5v56.1L8.5,60.3L0.5,0.1z'/%3E%3C/svg%3E");
+$kocka-sarga: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 355 61' width='100%25' height='100%25' preserveAspectRatio='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23f4e9b9' d='M354.7,3.6l-8-2v56.1l5.6-2.5L354.7,3.6z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%23f4e9b9' d='M0.5,0.1l343,1.5v56.1L8.5,60.3L0.5,0.1z'/%3E%3C/svg%3E");

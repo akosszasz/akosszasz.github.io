@@ -1,0 +1,78 @@
+body
+{font-family:Verdana;
+font-size:10px;
+background-image:url('bg_box.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+p {font-family:Verdana; font-size:8px;line-height:130% }
+
+
+
+A:link {COLOR: #004d69; TEXT-DECORATION: none; FONT-WEIGHT: bold }
+A:visited {COLOR: #004d69; TEXT-DECORATION: none; FONT-WEIGHT: bold }
+A:hover {COLOR: #003b5b; TEXT-DECORATION: underline; FONT-WEIGHT: bold}
+
+
+.Container {
+}
+#Scroller-1 { 
+  position: absolute; 
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
+}
+#Scroller-1 p {
+  margin: 0; padding: 0px 0px;
+  font-family:Verdana,Helvetica,sans-serif; font-size:11px;  line-height:130%
+}
+.Scroller-Container {
+  position: absolute;
+  top: 0px; left: 0px;
+}
+#Scrollbar-Container {
+  position: absolute;
+  top: 40px; left: 60px;
+}
+.Scrollbar-Up {
+  cursor: pointer;
+  position: absolute;
+}
+.Scrollbar-Track {
+  width: 22px; height: 161px;
+  position: absolute;
+  top: 36px; left: 4px;
+  background: transparent url(images/scrollbar_track.gif) no-repeat center center;
+}
+.Scrollbar-Handle {
+  position: absolute;
+  width: 18px; height: 18px;
+}
+.Scrollbar-Down {
+  cursor: pointer;
+  position: absolute;
+  top: 187px;
+}
+
+
+
+.menuskin{
+position:absolute;
+width:165px;
+background-color: #EDEEBF;
+border:2px solid #5E0807;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+visibility:hidden;
+}
+
+.menuskin a{
+text-decoration:none;
+color:black;
+padding-left:10px;
+padding-right:10px;
+}
+
+.kep{text-align:center;}

@@ -1,0 +1,417 @@
+@hullam-pattern: url("../images/hullam-pattern.png");
+
+.archivum {
+	background-image: none;
+	font-size: 14px;
+}
+
+.archivum-header {
+	background: url('../images/2018/archivum-header-bg.jpg') 50% 0 no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+
+	p {
+		margin-top: 2em;
+		margin-bottom: 3em;
+		text-shadow: 0 0 15px rgba(0,0,0,.9), 0 0 10px rgba(0,0,0,.9);
+	}
+}
+
+.archivum-footer {
+	margin-top: -70px;
+	background-image: url('../images/2018/archivum-footer-szegely.png');
+
+	&:before {
+		display: none;
+	}
+}
+
+.archivum-ev {
+	background: @hullam-pattern 0 0 repeat;
+	color: #3f3f3f;
+	padding-top: 140px;
+	padding-bottom: 40px;
+
+	.btn-row {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&:last-of-type {
+		padding-bottom: 120px;
+	}
+
+	&:nth-child(odd) {
+		.archivum-ev-header-info {
+			order: 2;
+		}
+
+		.archivum-ev-header-kiemelt {
+			order: 1;
+		}
+
+		.archivum-logo {
+			float: right;
+			margin-left: auto;
+			margin-right: -4em;
+		}
+
+		.btn-row {
+			justify-content: flex-start;
+		}
+	}
+}
+
+.ev-2008 {
+	background-color: #e2e2de;
+	background-image: @hullam-pattern, @hullam-pattern, @hullam-pattern;
+	background-position: 0 0, 0 0, 0 0;
+	background-repeat: repeat, repeat, repeat;
+	padding-top: 200px;
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 86px;
+		background-image: url("../images/2018/archivum-header-szegely.png");
+		background-position: 0 0, 50% 0;
+		background-repeat: repeat, repeat-x;
+	}
+
+	.archivum-ev-title {
+		color: #ababa7;
+	}
+}
+
+.ev-2009 {
+	background-color: #333;
+
+	.archivum-ev-title {
+		color: #3f3f40;
+	}
+
+	.btn-tovabbi-videok {
+		color: #51377a;
+	}
+}
+
+.ev-2010 {
+	background-color: #65b5b4;
+
+	.archivum-ev-title,
+	.btn-tovabbi-videok {
+		color: #65b5b4;
+	}
+}
+
+.ev-2011 {
+	background-color: #6ba2c9;
+
+	.archivum-ev-title,
+	.btn-tovabbi-videok {
+		color: #6ba2c9;
+	}
+}
+
+.ev-2012 {
+	background-color: #f7d063;
+
+	.archivum-ev-title {
+		color: #3f3f40;
+	}
+
+	.btn-tovabbi-videok {
+		color: #f7d063;
+	}
+}
+
+.ev-2013 {
+	background-color: #a5cf6b;
+
+	.archivum-ev-title,
+	.btn-tovabbi-videok {
+		color: #a5cf6b;
+	}
+}
+
+.ev-2014 {
+	background-color: #55a6a0;
+
+	.archivum-ev-title,
+	.btn-tovabbi-videok {
+		color: #3f3f40;
+	}
+}
+
+.ev-2015 {
+	background-color: #63a7c7;
+
+	.archivum-ev-title,
+	.btn-tovabbi-videok {
+		color: #63a7c7;
+	}
+}
+
+.ev-2016 {
+	background-color: #e07843;
+
+	.archivum-ev-title,
+	.btn-tovabbi-videok {
+		color: #e17b47;
+	}
+}
+
+.ev-2017 {
+	background-color: #49c7a5;
+
+	.archivum-ev-title,
+	.btn-tovabbi-videok {
+		color: #49c7a5;
+	}
+}
+
+.archivum-ev-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.archivum-ev-header-info {
+	width: ~"calc(50% - 20px)";
+	background: #fff;
+	padding: 1em 2em;
+	box-shadow: 0 0 20px 4px rgba(0,0,0,.1);
+}
+
+.archivum-ev-header-kiemelt {
+	width: ~"calc(50% - 10px)";
+	background: #fff;
+	box-shadow: 0 0 20px 4px rgba(0,0,0,.1);
+}
+
+.archivum-logo {
+	float: left;
+	width: 180px;
+	margin-top: -6em;
+	margin-left: -4em;
+}
+
+.archivum-ev-title {
+	font-size: 60px;
+}
+
+.btn-tovabbi-videok {
+	.button-variant(#333; #fff; #fff);
+	margin-top: 20px;
+}
+
+.archivum-tovabbi-videok {
+	.nav-tabs {
+		font-size: 20px;
+		margin-top: 20px;
+		text-transform: uppercase;
+
+		a {
+			color: #fff;
+
+			.ev-2008 &,
+			.ev-2012 & {
+				color: @text-color;
+			}
+		}
+
+		a:hover,
+		a:focus {
+			background: transparent;
+		}
+
+		.active {
+			font-weight: 600;
+		}
+	}
+}
+
+.archivum-videolista {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.archivum-video {
+	width: 20%;
+	padding: 10px;
+	.transition(all .2s ease-in-out);
+
+	.video-close {
+		display: none;
+		color: #fff;
+		font-size: 4em;
+		font-weight: 300;
+		line-height: .7;
+		text-align: right;
+		
+		>span {
+			cursor: pointer;
+			.transition(all .2s ease-in-out);
+		}
+
+		>span:hover {
+			color: @brand-danger;
+		}
+	}
+
+	&.fullwidth {
+		width: 100%;
+
+		.video-close {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+	.youtube-player {
+		margin: 0;
+	}
+}
+
+.archivum-video-title {
+	margin: 8px 0 0;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: none;
+	line-height: 1.3;
+	color: #fff;
+
+	.ev-2008 &,
+	.ev-2012 & {
+		color: @text-color;
+	}
+}
+
+.archivum-kereses-form {
+	position: relative;
+	text-align: left;
+}
+
+.archivum-kereses-input {
+	margin-bottom: 1em;
+	background: #fdedd4;
+}
+
+.archivum-kereses-bezar {
+	color: #fff;
+	font-weight: 300;
+	text-align: right;
+
+	>span {
+		cursor: pointer;
+		font-size: 4em;
+		line-height: 24px;
+		vertical-align: bottom;
+		.transition(all .2s ease-in-out);
+	}
+
+	>span:hover {
+		color: @brand-danger;
+	}
+}
+
+#archivum_search_results {
+	.transition(all .2s ease-in-out);
+}
+
+#archivum_kereses_loading {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	right: 0;
+}
+
+.archivum-ev-linkek {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1em;
+	flex-wrap: wrap;
+	margin-left: @grid-gutter-width / -3;
+	margin-right: @grid-gutter-width / -3;
+
+	a {
+		color: #fff;
+		font-size: 2em;
+		font-weight: 900;
+		padding-left: @grid-gutter-width / 3;
+		padding-right: @grid-gutter-width / 3;
+	}
+
+	a:hover {
+		color: @brand-danger;
+	}
+}
+
+@media (max-width: @grid-float-breakpoint-max) {
+	.archivum-header-logo img {
+		max-width: 100%;
+	}
+
+	.archivum-ev-header {
+		flex-direction: column;
+	}
+
+	.archivum-ev-header-info {
+		width: 100%;
+		order: 1 !important;
+	}
+
+	.archivum-ev-header-kiemelt {
+		width: 100%;
+		order: 2 !important;
+	}
+
+	.archivum-logo {
+		float: none !important;
+		margin-top: -4em;
+		margin-left: ~"calc(50% - 75px)" !important;
+		margin-right: auto !important;
+		width: 150px;
+	}
+
+	.archivum-ev-title {
+		font-size: 50px;
+	}
+
+	.archivum-video {
+		width: 100%;
+	}
+
+	.archivum-video.fullwidth .video-close {
+		display: none;
+	}
+
+	.archivum-ev-linkek {
+		justify-content: center;
+
+		a {
+			font-size: 1.6em;
+		}
+	}
+}
+
+@media (min-width: @screen-md-min) {
+	.archivum .container {
+		width: 900px + @grid-gutter-width;
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.archivum-ev-linkek a {
+		font-size: 1.8em;
+	}
+}

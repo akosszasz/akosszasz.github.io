@@ -1,0 +1,81 @@
+.program {
+	.table-responsive {
+		margin-left: -50px;
+		margin-right: -50px;
+	}
+
+	.table {
+		font-weight: 700;
+		border: 0 !important;
+		text-transform: uppercase;
+
+		td, th {
+			border: 0 !important;
+		}
+
+		.title > th {
+			background: @piros !important;
+			font-weight: 900;
+			padding: .25em 1em 0;
+			font-size: 2.7rem;
+		}
+
+		.margin {
+			height: 3rem;
+		}
+
+		> thead > tr > th,
+		> tbody > tr > th {
+			font-size: 2.1rem;
+			font-weight: 600;
+			line-height: 1;
+			white-space: nowrap;
+
+			strong {
+				font-weight: 900;
+			}
+
+			&.zold {
+				background: @zold;
+				color: #fff;
+			}
+
+			&.sarga {
+				background: @sarga;
+				color: #fff;
+			}
+		}
+
+		.ido {
+			color: @zold;
+		}
+	}
+
+	@media(max-width: @screen-xs-max) {
+		body {
+			font-size: 14px;
+		}
+
+		.header-title {
+			font-size: 2.5em;
+		}
+
+		.jegy-link {
+			font-size: 2em;
+		}
+
+		.article-container {
+			padding-top: 0;
+		}
+
+		.table-responsive {
+			border-color: @sarga;
+		}
+
+		.table>tbody>tr>th,
+		.table>thead>tr>th,
+		.table .title>th {
+			font-size: 1.5em;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.modal-header {
+	border-bottom-color: @table-border-color;
+}
+
+.modal-content {
+	background-color: lighten(@hirek-bg-color, 5%);
+
+	.table-striped>thead>tr:nth-of-type(odd),
+	.table-striped>tbody>tr:nth-of-type(odd) {
+		&, >.fixed-column {
+			background-color: darken(@hirek-bg-color, 2%);
+		}
+	}
+
+	.table-striped>tbody>tr:nth-of-type(even) >.fixed-column {
+		background-color: lighten(@hirek-bg-color, 5%);
+	}
+
+	.table .fixed-column {
+		position: relative;
+		left: 0;
+		background-image: url(http://1x1px.me/C26A07-1.png), url(http://1x1px.me/C26A07-1.png);
+		background-position: 100% 0, 0 0;
+		background-repeat: repeat-y;
+		border-right: 0;
+		margin-left: -1px;
+	}
+
+	th, td {
+		vertical-align: middle !important;
+
+		:first-child {
+			margin-top: 0;
+		}
+
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a, a:visited, a:active {
+		color: #bc3a01;
+	}
+
+	a:hover {
+		color: darken(#bc3a01, 15%);
+	}
+}

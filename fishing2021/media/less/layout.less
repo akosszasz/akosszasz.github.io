@@ -1,0 +1,108 @@
+.container-fluid {
+	max-width: @screen-lg-min;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+html {
+	height: 100%;
+	font-size: @font-size-base;
+}
+
+body {
+	background: url("@{images-url}body-bg.jpg") 50% 0 no-repeat;
+	background-attachment: fixed;
+	background-size: 100vw auto;
+	background-color: #2f2e2e;
+	position: relative;
+	min-height: 100%;
+	font-weight: 300;
+}
+
+a {
+	.transition(all .2s ease-out);
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	text-transform: uppercase;
+}
+
+.set-links-color(@color){
+	a {
+		&, &:focus, &:active {
+			color: @color;
+		}
+
+		&:hover {
+			color: darken(@color, 10%);
+		}
+	}
+
+}
+
+.btn {
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.text-white {
+	.text-emphasis-variant(#fff);
+}
+
+body:not(.fooldal) main {
+	position: relative;
+	margin-top: -320px;
+	padding-top: 350px;
+	margin-bottom: -127px;
+	padding-bottom: 200px;
+	min-height: 100vh;
+	background: rgba(255,255,255,.85);
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.loader {
+	height: 39px;
+}
+
+.aloldal-menu {
+	background: @brand-warning;
+	margin: -350px -50px 1em;
+	padding-top: 350px;
+
+	.nav-tabs>li>a {
+		color: #fff;
+		border: 0;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
+	.nav-tabs>li>a:hover,
+	.nav-tabs>li>a:focus {
+		background: @brand-danger;
+	}
+
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+		border: 0;
+	}
+}
+
+.section-text-anchor {
+	text-transform: uppercase;
+	font-weight: 900;
+	color: @brand-success;
+	margin: .5em 0;
+	display: inline-block;
+}
+
+.tamogato {
+	padding-top: @grid-gutter-width / 2;
+	padding-bottom: @grid-gutter-width / 2;
+}
+
+article {
+	img {
+		.img-responsive;
+	}
+}

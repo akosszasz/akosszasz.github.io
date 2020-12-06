@@ -1,0 +1,32 @@
+.jegytipus-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+
+.jegy-nev {
+	color: @brand-danger;
+}
+
+.jegy-ar {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.jegy-link {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.jegy.elfogyott {
+	&, .jegy-nev {
+		color: #aaa;
+	}
+}
+
+.jegy-elfogyott-label {
+	font-weight: 700;
+	font-size: 1.25em;
+	color: @brand-danger;
+	text-transform: uppercase;
+}

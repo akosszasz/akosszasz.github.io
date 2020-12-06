@@ -1,0 +1,134 @@
+@media (max-width: $grid-float-breakpoint-max) {
+	.header {
+		height: auto;
+		//position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		padding-top: 30px !important;
+		overflow: visible;
+
+		&-logo {
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		&-logo-img {
+			width: auto;
+			height: 25vmin;
+			min-height: 70px;
+		}
+
+		&-nav-toggle {
+			width: 29px;
+			height: 29px;
+			//margin: $grid-gutter-width / 2;
+			position: relative;
+			z-index: 1001;
+			overflow: hidden;
+			position: absolute;
+			right: 8vmin;
+			top: 8vmin;
+
+			&.open {
+				position: fixed;
+			}
+
+			.line-close,
+			.line-open {
+				stroke: #fff;
+				stroke-width: 10px;
+				box-shadow: 0 0 20px rgba(0,0,0,.4);
+				@include default-transition;
+			}
+
+			.line-close {
+				opacity: 0;
+				transform: translateX(-100%);
+			}
+
+			.line-open {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		&-nav.open + &-nav-toggle {
+			.line-close {
+				opacity: 1;
+				transform: translateX(0);
+			}
+
+			.line-open {
+				opacity: 0;
+				transform: translateX(100%);
+			}
+		}
+
+		&-nav {
+			position: fixed;
+			right: 100vw;
+			width: 100vw;
+			top: 0;
+			bottom: 0;
+			overflow-y: auto;
+			background: transparentize(#000, .05);
+			z-index: 1000;
+			padding: 25vmin $grid-gutter-width / 2 $grid-gutter-width / 2;
+			margin: 0;
+
+			@include default-transition;
+
+			&.open {
+				right: 0;
+				box-shadow: 0 0 30px rgba(255, 255, 255, .2), 0 0 20px rgba(0, 0, 0, .4);
+			}
+		}
+
+		&-menupont {
+			height: auto;
+			margin: 0;
+			padding: 10px;
+			font-size: 16px;
+			border-top: 1px solid transparentize($brand-primary, .8);
+		}
+
+		&-link {
+			margin: .7em 0;
+			font-size: 12px;
+
+			img {
+				height: 30px;
+			}
+		}
+
+		&-link + &-link {
+			margin-left: 0;
+		}
+	}
+
+	.panel-caret polyline {
+		@include default-transition;
+		@include transform-origin(50% 50%);
+	}
+
+	.panel-title-toggle[aria-expanded=true] .panel-caret polyline {
+		@include rotateX(180deg);
+	}
+
+	.hirek-listaelem {
+		&-cim {
+			margin-top: .2em;
+		}
+	}
+
+	.lista-grid {
+		opacity: 1;
+	}
+
+	.programtabla-szinpad td, .programtabla-szinpad th {
+		font-size: 16px;
+	}
+}

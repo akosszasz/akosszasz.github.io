@@ -1,0 +1,119 @@
+.szoveg, .cikk {
+
+	a {
+		font-weight: bold;
+		text-decoration: underline;
+		color: $brand-danger;
+	}
+
+	h1, h2, h3,	h4, h5, h6 {
+		font-weight: 700;
+		font-family: $font-family-base;
+	}
+
+	p {
+		margin-top: 10px;
+		margin-bottom: 15px;
+		font-size: $font-size-base;
+	}
+
+	ul, ol {
+		list-style-position: inside;
+		padding-left: 25px;
+		@media (max-width: $screen-xs-max) {
+			padding-left: 10px;
+		}
+	}
+
+	ul {
+		list-style: none;
+		> li {
+			position: relative;
+			padding-left: 25px;
+			&:before {
+				content: '';
+				width: 12px;
+				height: 12px;
+				border-bottom: 1px solid $brand-primary;
+				background: transparent;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	img {
+		max-width: 100%;
+		@include img-responsive();
+	}
+
+	figure {
+		margin-bottom: 15px;
+	}
+	figcaption {
+		color: $text-color;
+		font-size: 14px;
+	}
+
+	table {
+		width: 100%;
+		border: 0;
+		margin-bottom: 15px;
+
+		@extend .programtabla;
+
+		/*
+		thead {
+			> tr {
+				background-color: $brand-primary;
+				border: 1px solid $text-color;
+				color: white;
+				> th {
+					text-align: center;
+					border: 1px solid $text-color;
+					vertical-align: middle;
+					padding: 5px 0;
+				}
+			}
+		}
+
+		tbody {
+			> tr {
+				border: 1px solid $text-color;
+				> td, th {
+					border: 1px solid $text-color;
+					padding: 2px 0;
+					vertical-align: middle;
+					color: $text-color;
+					text-align: center;
+				}
+			}
+			> tr:nth-child(odd) {
+				background-color: transparent;
+			}
+
+			> tr:nth-child(even) {
+				background-color: rgba(217, 217, 217, 0.3);
+			}
+		}
+		*/
+	}
+
+	blockquote {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		border-color: $brand-primary;
+		color: $brand-primary;
+		text-transform: uppercase;
+		font-size: $font-size-base;
+	}
+
+	hr {
+		border-color: #7a7a7a;
+		border-bottom: 2px;
+	}
+
+}

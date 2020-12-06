@@ -328,6 +328,11 @@ section.success {
   justify-content: center;
   flex-wrap: wrap;
 }
+.prices-wrapper{
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+}
 #portfolio .portfolio-item {
   text-align:center;
   margin: 0 0 15px;

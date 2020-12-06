@@ -1,0 +1,119 @@
+.fooldal {
+	.header {
+		padding-top: 50px;
+		height: 1120px;
+
+		&::after {
+			top: calc(100% - 40px);
+		}
+	}
+
+	.header-menu {
+		order: 1;
+	}
+	.header-linkek {
+		order: 2;
+	}
+
+	.header-logo {
+		order: 3;
+		width: 100%;
+		flex-basis: 100%;
+
+		&-link {
+			display: flex;
+			justify-content: center;
+		}
+
+		&-img {
+			width: auto;
+		}
+	}
+
+	.header-nav {
+		margin-bottom: 0;
+	}
+
+	.main-content {
+		padding-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-headliners {
+		max-width: 1200px;
+		margin: 1em auto;
+
+		&-link {
+			font-weight: bold;
+			text-decoration: underline;
+			text-transform: uppercase;
+			margin-top: 1.5em;
+		}
+	}
+
+	&-headliner {
+		color: #fff;
+		font-size: 40px;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.1;
+		padding: 10px 30px;
+		margin: 8px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+		&:nth-child(3n+1) {
+			//background-image: url("../images/2018/label-bg-piros.svg");
+			background-image: $kocka-piros;
+		}
+
+		&:nth-child(3n+2) {
+			color: $text-color;
+			//background-image: url("../images/2018/label-bg-sarga.svg");
+			background-image: $kocka-sarga;
+		}
+
+		&:nth-child(3n) {
+			//background-image: url("../images/2018/label-bg-zold.svg");
+			background-image: $kocka-zold;
+		}
+	}
+
+	&-nemzene {
+		background: url('../images/2019/fooldal-nemzene-bg.jpg') 50% 50% no-repeat;
+		background-size: 100vw auto !important;
+		padding-bottom: $grid-gutter-width * 2;
+	}
+
+	&-gasztro {
+		background: url('../images/2019/fooldal-gasztro-bg.jpg') 50% 50% no-repeat;
+		background-size: 100vw auto !important;
+		padding-bottom: $grid-gutter-width * 2;
+
+		&-kocka {
+			width: 290px;
+			height: 144px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 0 30px;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+
+		&-szam {
+			font-size: 70px;
+		}
+
+		&-item {
+			font-size: 24px;
+		}
+	}
+
+	.nemzene-listaelem-cim a {
+		color: #fff;
+	}
+}

@@ -1,0 +1,132 @@
+.dicsosegfal{
+	background-image: url('../images/2020/dicsosegfal/bg01.png'), url('../images/2020/dicsosegfal/bg02.png'), url(../images/2020/dicsosegfal/bg00.jpg);
+	background-repeat: repeat-y, repeat-y, no-repeat;
+	background-size: auto, auto, cover;
+	background-position: left top, right top, 0% 0%;
+	.header,
+	.footer{
+		display: none;
+	}
+	.main-content{
+		&:before{
+			content: "";
+			width: 258px;
+			height: 134px;
+			display: block;
+			position: absolute;
+			left: 24px;
+			top: 16px;
+			background-image: url('../images/2020/dicsosegfal/logo.png');
+		    background-repeat: no-repeat;
+		}
+	}
+	.container{
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		h3{
+			font-size: 28px;
+			color: #ff5d10;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 80px;
+			&:before{
+				content: "";
+				width: 100%;
+				height: 117px;
+				background-image: url('../images/2020/dicsosegfal/title.png');
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				display: block;
+				margin-top: 44px;
+				margin-bottom: 55px;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 745px;
+			}
+		}
+		p{
+			font-size: 18px;
+			color: #FFEFD1;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 700;
+			line-height: 28px;
+		}
+	}
+}
+@media screen and (max-width: 1280px){
+	.dicsosegfal{
+		background-position: -100px 0px, calc(100% + 100px) 0px, 0% 0%;
+		.main-content{
+			&:before{
+				width: 150px;
+				background-size: 100% auto;
+				left: 14px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.dicsosegfal{
+		background-position: -150px 0px, calc(100% + 150px) 0px, 0% 0%;
+		.container{
+			h3{
+				&:before{
+					height: 60px;
+				}
+			}
+		}
+		.main-content{
+			&:before{
+				width: 80px;
+				left: 14px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 640px){
+	.dicsosegfal{
+		background-position: top left, top right, 0% 0%;
+		background-size: 100px auto, 100px auto, cover;
+		.container{
+			max-width: 60%;
+			h3{
+				font-size: 22px;
+				margin-bottom: 60px;
+				&:before{
+					margin-top: 24px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px){
+	.dicsosegfal{
+		.main-content{
+			&:before{
+				width: 45px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 380px){
+	.dicsosegfal{
+		background-position: -25px 0px, calc(100% + 25px) 0px, 0% 0%;
+		background-size: 100px auto, 100px auto, cover;
+		.container{
+			max-width: 65%;
+			h3{
+				font-size: 18px;
+				margin-bottom: 40px;
+				&:before{
+					height: 40px;
+				}
+			}
+			p{
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+	}
+}
