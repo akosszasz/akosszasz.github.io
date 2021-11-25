@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="377 8 1366 457" style="enable-background:new 377 8 1366 457;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{mask:url(#mask-2);fill:#FFFFFF;}
+</style>
+<desc>Created with Sketch.</desc>
+<g id="monitor">
+	<g id="Home" transform="translate(0.000000, -2468.000000)">
+		
+			<g id="Page-1-Copy-7" transform="translate(683.500000, 2546.500000) scale(-1, -1) translate(-683.500000, -2546.500000) translate(0.000000, 2488.000000)">
+			<path id="Fill-1" class="st0" d="M376.5-273.1c-0.1,0-0.2,0-0.3,0c-30.7-3.9-61.7-8.8-91.9-14.6
+				c-209.3-40.5-377.2-38.8-481.2-30.3c-112.7,9.2-176.7,28.3-177.4,28.5c-1.1,0.3-2.3-0.3-2.7-1.4s0.3-2.3,1.4-2.7
+				c0.6-0.2,65-19.4,178.1-28.6c104.3-8.6,272.7-10.3,482.5,30.3c30.2,5.8,61,10.8,91.7,14.6c1.2,0.1,2,1.2,1.8,2.4
+				C378.5-273.9,377.6-273.1,376.5-273.1"/>
+			<path id="Fill-4" class="st0" d="M431.9-267.3c-0.1,0-0.1,0-0.2,0c-9.7-0.8-19.5-1.8-29.1-2.8c-1.2-0.1-2-1.2-1.9-2.3
+				c0.1-1.2,1.2-2,2.3-1.9c9.6,1,19.4,2,29.1,2.8c1.2,0.1,2,1.1,1.9,2.3C433.9-268.1,433-267.3,431.9-267.3"/>
+			<path id="Fill-6" class="st0" d="M555.1-262c-15.2,0-30.3-0.2-45.4-0.7c-1.2,0-2.1-1-2.1-2.2c0-1.2,1-2.1,2.2-2.1
+				c73.3,2.3,147.3-1,220.1-9.8c1.2-0.1,2.2,0.7,2.4,1.9c0.1,1.2-0.7,2.2-1.9,2.4C672.4-265.5,613.6-262,555.1-262"/>
+			<path id="Fill-8" class="st0" d="M781.2-279.7c-1,0-1.9-0.7-2.1-1.8c-0.2-1.2,0.6-2.3,1.8-2.4c3.2-0.5,6.4-1,9.5-1.5
+				c1.2-0.2,2.3,0.6,2.4,1.8c0.2,1.2-0.6,2.3-1.8,2.4c-3.1,0.5-6.3,1-9.5,1.5C781.4-279.7,781.3-279.7,781.2-279.7"/>
+			<g id="Group-12" transform="translate(0.000000, 43.251781)">
+				<g id="Clip-11">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" id="mask-2">
+					<g class="st1">
+						<polygon id="path-1" class="st0" points="989,-279.8 989,-255.2 -377,-255.2 -377,-327.8 989,-327.8 989,-279.8 989,-327.8 
+							818.7,-327.8 818.7,-279.8 						"/>
+					</g>
+				</mask>
+				<path id="Fill-10" class="st2" d="M820.9-279.8c-1,0-1.9-0.7-2.1-1.7c-0.2-1.2,0.5-2.3,1.7-2.5c102.8-19.3,165-43.4,165.6-43.7
+					c1.1-0.4,2.3,0.1,2.8,1.2c0.4,1.1-0.1,2.3-1.2,2.8c-0.6,0.2-63.2,24.5-166.4,43.9C821.1-279.8,821-279.8,820.9-279.8"/>
+			</g>
+		</g>
+		<path id="Fill-1-Copy" class="st0" d="M377,2914.8c0,0,306.1-119.8,704.3-42.7c407,78.7,661.7,1.7,661.7,1.7V2476H377V2914.8z"/>
+	</g>
+</g>
+</svg>

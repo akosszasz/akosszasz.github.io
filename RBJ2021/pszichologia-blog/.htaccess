@@ -1,0 +1,52 @@
+Options +MultiViews
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+#végződések eltüntetése
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+#RewriteRule ^(.*)$ /index.php?/$1 [L]
+#RewriteRule ^([^\.*]+)$ /index.php/$1 [L]
+#RewriteRule ^([^\.*]+)$ *index.php/$1 [L]
+##index.php kivétele url-ből
+#RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+#RewriteCond %{REQUEST_URI} !/system/.* [NC]
+#RewriteRule (.*?)index\.php/*(.*)$ /$1$2 [R=301,NE,L]
+#RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+#RewriteRule (.*?)index\.php/*(.*) pszichologia-blog/$1$2 [R=301,NE,L]
+
+#pszichologia-blog.php végződés eltüntetése és átirányítása, ha mégis végződéssel írják be
+#RewriteCond %{THE_REQUEST} /pszichologia-blog\.php
+#RewriteRule ^pszichologia-blog\.php/?$ /pszichologia-blog [R=301,L]
+#Redirect /ablog /blog/index.php
+#admin felület elérése
+Options -Indexes
+#Redirect /psziche /site-operator/operator.php
+###### gyorsítótárazás ######
+<IfModule mod_expires.c>
+ExpiresActive On
+# Alapértelmezett direktíva
+ExpiresDefault "access plus 2 days"
+# A folyamatosan változó összetevőkre tiltjuk a gyorstárazást
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/xml "access plus 0 seconds"
+ExpiresByType text/xml "access plus 0 seconds"
+# HTML
+ExpiresByType text/html "access plus 0 seconds"
+ExpiresByType text/css "access plus 2 days"
+ExpiresByType text/js "access plus 2 hours"
+# Képek elévülési idejei
+ExpiresByType image/jpg "access plus 1 week"
+ExpiresByType image/jpeg "access plus 1 week"
+ExpiresByType image/gif "access plus 1 week"
+ExpiresByType image/png "access plus 1 week"
+# Favicon elévülési idejei
+ExpiresByType image/x-icon "access plus 1 year"
+# JavaScript elévülési idejei
+#ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+# DB törés elleni védelem.
+RewriteCond %{QUERY_STRING} ^.*(;|<|>|’|”|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|union|select|insert|cast|set|declare|drop|update|md5|benchmark).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^\.\./ [NC]
+RewriteRule ^(.*)$ - [F]
