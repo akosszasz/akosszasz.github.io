@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Akos Szasz - Product Designer</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap) -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Fontawesome 6.1.0 -->
+        <link href="fonts/fontawesome-pro-6.1.0-web/css/all.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 117
+            }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                //window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/AS_logo/Logo.svg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span></button>
+                
+            </div>
+        </nav>
+        <!-- Page content-->
+        <section style="height:calc(100vh); display:flex; justify-content: center; align-items: center;">
+        
+        <div class="container">
+            <div class="text-center">
+                <img style="width:100%" src="img/saving_cover.png">
+            </div>
+            <div class="row py-5" style="display:flex;">
+                <div style="justify-content: space-between;display: flex;">
+                    <a href="https://zurvey.io" target="_blank">zurvey.io</a>
+                    <a style="color: #F05454;">UX Research</a>
+                    <a style="color: #F05454;">2022</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="container py-5">
+            <div class="text-left py-3">
+                <h3>The Challenge</h3>
+                <p>We have several actions laid out on the screen with colliding priority and adding more buttons just won’t work. We have a fallback to the previously published state, a save, a publish and a preview.</p>
+                <p>Another layer to the problem is navigating from the embed settings page to check the URL Parameters on the URL tab discards all change, forcing the user to memorise all of the exact names of URL parameters.</p>
+                <p>Moreover, we develop the platform with a focus on features and we often fail to improve on recurring patterns regarding mechanics.</p>
+            </div>
+            <div class="text-left py-3">
+                <h3>Users and Audience</h3>
+                <p>The most common persona expected is a CX/Market research expert or someone with developer skills to fill in the dev-related parts of the settings. These two personas will probably cooperate and it is necessary to do so without publishing the settings.</p>
+            </div>
+            <div class="text-left py-3">
+                <h3>Solution Concepts</h3>
+                <h5>1. Autosave</h5>
+                <div class="text-center py-5">
+                    <img style="box-shadow: 0px 4px 14px rgba(131, 146, 165, 0.45); border-radius:4px;" src="img/saving/save-1.png">
+                </div>
+                <p>Problem to solve: The feedback that the user CAN modify this settings while the live settings remain untouched.</p>
+            </div>
+            <div class="text-left py-3">
+                <h5>2. Only group actions that are very closely related, ie. Save / Save and Publish</h5>
+                <div class="text-center py-5">
+                    <img class="rounded-image" style="width: 100%; max-width: 800px; border-radius:4px;" src="img/saving/save-2.png">
+                </div>
+            </div>
+            <div class="text-left py-3">
+                <h5>3. Introduce “status” information on the list view — Draft, Time of publish, etc.</h5>
+                <div class="text-center py-5">
+                    <img class="rounded-image" style="width: 100%; max-width: 800px; border-radius:4px;" src="img/saving/save-3.png">
+                </div>
+            </div>
+            <div class="text-left py-3">
+                <h5>4. Leaving the settings should have a warning popup saying you have unsaved changes</h5>
+
+            </div>
+
+
+            <div class="text-left py-3 pb-5 mb-5">
+                <h3>Conclusion</h3>
+                <p>In the end we agreed in not implementing the Autosave functionality as it would require introducing a massive system rather than using what we can currently implement with most improvement by least effort.</p>
+                <p>We went with no grouped primary actions, as a better button layout worked way better.</p>
+                <div class="text-center py-5">
+                    <img class="rounded-image" style="max-width: 800px; border-radius:4px;" src="img/saving/save-conclusion.png">
+                </div>
+            </div>
+        </div>
+        
+        <section class="py-5" style="background-color:#ffffff">
+            <div class="container">
+                <div class="row" style="align-items: center;">
+                    <div class="casestudy-tile col-md-4" style="text-align:left">
+                        <img style="width:100%" src="img/akos.png">
+                    </div>
+                    <div class="casestudy-tile col-md-8" style="text-align:left">
+                        <h5>Hi, I am Akos.</h5>
+                        <p>I build products.</p>
+                        <div style="width:100%; display:flex; justify-content: space-between;">
+                            <a href="#">behance.net</a>
+                            <a style="color:#F05454">0036 70 619 9797</a>
+                            <a style="color:#F05454">gvnsaxon@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="align-items: center;">
+                    <div style="margin:4rem 0; text-align:center">
+                        <p><b>Thanks,</b> <br>
+                        I'm looking forward working with you!</p>
+                        <img style="width:91px" src="img/AS_logo/Logo-hover.svg">
+                    </div>
+                </div>
+
+            </div>
+            </section>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

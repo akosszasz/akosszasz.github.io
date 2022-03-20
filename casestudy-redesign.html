@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Akos Szasz - Product Designer</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap) -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Fontawesome 6.1.0 -->
+        <link href="fonts/fontawesome-pro-6.1.0-web/css/all.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 117
+            }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                //window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/AS_logo/Logo.svg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span></button>
+                
+            </div>
+        </nav>
+        <!-- Page content-->
+        <section style="height:calc(100vh); display:flex; justify-content: center; align-items: center;">
+        
+        <div class="container">
+            <div class="text-center">
+                <img style="width:100%" src="img/redesign_cover.png">
+            </div>
+            <div class="row py-5" style="display:flex;">
+                <div style="justify-content: space-between;display: flex;">
+                    <a href="https://zurvey.io" target="_blank">zurvey.io</a>
+                    <a style="color: #F05454;">UX Research</a>
+                    <a style="color: #F05454;">2021</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="container py-5">
+            <div class="text-left py-3">
+                <h3>The Challenge</h3>
+                <p>Slow loading times appear even slower when using spinner-like loading design. There is no difference between loading and an error. Loading pattern is handled as a uniform form of loading regardless of context.</p>
+                <p>Loading charts on dashboard is done on the user's computer which can't really be a foreseen factor on more demanding graphs.</p>
+            </div>
+            <div class="text-left py-3">
+                <h3>Psychology of loading times</h3>
+                <p>The time spent on a loading animation or pattern should reflect the perceived complexity of a task: in the context of Zurvey.io, generating a dashboard would be a difficult task, therefore longer waiting times are appropriate.</p>
+                <p>However, loading the Home screen should feel snappy and effortless since essentially this is a list view. Most of the loading should happen on the dashboard and not here.</p>
+            </div>
+            <div class="text-left py-3">
+                <h3>Beyond 1 second</h3>
+                <p>When an expected loading time is longer than 1 second, that's when anything should be shown. For really long and complex tasks there are a few options.</p>
+            </div>
+            <div class="text-left py-3">
+                <h3>Suggestions</h3>
+                <ul>
+                    <li>Skeleton UI for list views, settings and dataset creators</li>
+                    <li>Fade-in microinteraction animations for dashboard → Lazyloading-like experience combining animations on chart elements</li>
+                </ul>
+            </div>
+            <div class="text-left py-3">
+                <h4>1. Predictable loading times</h4>
+                <ul>
+                    <li>A progress bar showing percentage</li>
+                    <li>A list of tasks the computer is doing, especially on the dashboard (over approx. 1000 rows):</li>
+                </ul>
+                <img class="rounded-image" src="img/Loading_1.png">
+                <div class="text-center py-2"><span>Progress bar on a list element</span></div>
+            </div>
+            <div class="text-left py-3">
+                <h4>2. Non-predictable loading times</h4>
+                <ul>
+                    <li>Spinner (Pulsing circle)</li>
+                    <li>Skeleton Screen</li>
+                </ul>
+                <img class="rounded-image" src="img/Loading_2.png">
+                <div class="text-center py-2"><span>Task checklist and Skeleton UI on a dashboard</span></div>
+            </div>
+            <div class="text-left py-3 pb-5 mb-5">
+                <h3>Conclusion</h3>
+                <p>Alternative visualisation for loading is a step to the right direction, however the actual loading times are more important. The animations will ease the sense of slow loading times, however, it can look impressive, it is not an be-all and end-all addition to the experience enhancement.</p>
+            </div>
+        </div>
+        
+        <section class="py-5" style="background-color:#ffffff">
+            <div class="container">
+                <div class="row" style="align-items: center;">
+                    <div class="casestudy-tile col-md-4" style="text-align:left">
+                        <img style="width:100%" src="img/akos.png">
+                    </div>
+                    <div class="casestudy-tile col-md-8" style="text-align:left">
+                        <h4>Hi, I am Akos.</h4>
+                        <p>I build products.</p>
+                        <div style="width:100%; display:flex; justify-content: space-between;">
+                            <a href="#">behance.net</a>
+                            <a style="color:#F05454">0036 70 619 9797</a>
+                            <a style="color:#F05454">gvnsaxon@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="align-items: center;">
+                    <div style="margin:4rem 0; text-align:center">
+                        <p><b>Thanks,</b> <br>
+                        I'm looking forward working with you!</p>
+                        <img style="width:91px" src="img/AS_logo/Logo-hover.svg">
+                    </div>
+                </div>
+
+            </div>
+            </section>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

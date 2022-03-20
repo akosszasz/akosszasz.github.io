@@ -1,31 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- zurvey.io plugin script --><script>(function (z, u, r, v, e, y) { z.zurvey = z.zurvey || function () { (z.zurvey.q = z.zurvey.q ||  []).push(arguments); }; z.zurvey.bu = v; z.zurvey.do = {}; z.zurvey.gi = r; z.zurvey.api = y; h = u.getElementsByTagName("head")[0]; s = u.createElement("script"); s.async = 1; s.src = e || "https://embed.zurvey.io/embed.js"; h.appendChild(s); }) (window, document, 911)</script><!-- zurvey.io plugin script end -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link href="theme.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Akos Szasz - Product Designer</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap) -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Fontawesome 6.1.0 -->
+        <link href="fonts/fontawesome-pro-6.1.0-web/css/all.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
 
-  <script type="text/javascript" src="home.js"></script>
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-</head>
-<body>
-    <div id="welcome-text" onmouseleave="hoverLeave()" onmouseover="hoverEnter()" onclick="jumpPage()">
-        <p>hello,<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>my name is akos szasz</p>
-        <p>a graphic designer<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;</span>typographer</p>
-        <p>ui designer<span style="text-decoration:line-through">&nbsp;&nbsp;&nbsp;&nbsp;</span>and brand designer</p>
-      </p>
-    </div>
-    <section id="empty">
-    </section>
-    <section id="works" class="works">
-    </section>
-    <section id="about" class="about">
-    </section>
-    <section id="music" class="music">
-    </section>
-</body>
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 117
+            }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                //window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/AS_logo/Logo.svg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#casestudies">Case Studies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#design">Design Development</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <section style="height:calc(100vh); display:flex; justify-content: center; align-items: center;">
+        <div class="container">
+            <div class="text-center">
+                <h1>Hi, my name is <span style="color:#F05454; font-weight: bold;">Akos</span>, <br /> I'm a <span style="color:#F05454; font-weight: bold;">Product Designer</span></h1>
+            </div>
+            <div class="text-center">
+               <a href="#casestudies"> <div class="mouse">
+                    <div class="mouse-icon">
+                      <span class="mouse-wheel"></span>
+                    </div>
+                  </div> </a>
+            </div>
+        </div>
+        </section>
+        <div id="casestudies" class="container py-5">
+            <div class="text-center py-5">
+                <h2>Case Studies</h2>
+                <p>Writings representing my research approach through projects.</p>
+            </div>
+            <div class="row text-center">
+                <div class="casestudy-tile col-md-4" style="text-align:left">
+                    <img style="width:100%" src="img/home_designsystem.svg"> <br>
+                    <p>How did we overcome UI inconsistencies — TO WRITE</p>
+                    <a href="casestudy-designsystem.html">Read more</a>
+                </div>
+<!--                 <div class="casestudy-tile col-md-3" style="text-align:left">
+                    <img style="width:100%" src="img/home_redesign.svg"> <br>
+                    <p>How did we overcome UI inconsistencies — TO WRITE</p>
+                    <a href="casestudy-redesign.html">Read more</a>
+                </div> -->
+                <div class="casestudy-tile col-md-4" style="text-align:left">
+                    <img style="width:100%" src="img/home_loading.svg"> <br>
+                    <p>On psychology of loading times and UX patterns to improve them.</p>
+                    <a href="casestudy-loading.html">Read more</a>
+                </div>
+                <div class="casestudy-tile col-md-4" style="text-align:left">
+                    <img style="width:100%" src="img/home_saving.svg"> <br>
+                    <p>Handling saved states and communicating changes.</p>
+                    <a href="casestudy-saving.html">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div id="design" class="container py-5">
+            <div class="text-center">
+                <h2>Product Design</h2>
+            </div>
+            <div class="row text-center  py-5" style="align-items: center;">
+                <div class="design-tile col-md-6" style="text-align:left">
+                    <img style="width:100%" src="img/Zurvey_Home 1.png">
+                </div>
+                <div class="design-tile col-md-6" style="text-align:left">
+                    <p><b>Zurvey.io</b> — from 2018</p>
+                    <p>A text-analytics driven survey platform for CX Research</p>
+                    <a href="design-zurvey.html">Read more</a>
+                </div>
+            </div>
+            <div class="row text-center  py-5" style="align-items: center;">
+                <div class="design-tile col-md-6" style="text-align:left">
+                    <p><b>Neticle Media Intelligence</b> — from 2018</p>
+                    <p>Machine Learning supported Media Monitoring tool with detailed data-visualisation</p>
+                    <a href="design-nmi.html">Read more</a>
+                </div>
+                <div class="design-tile col-md-6" style="text-align:left">
+                    <img style="width:100%" src="img/NMI.png">
+                </div>
+            </div>
+            <div class="row text-center py-5" style="align-items: center;">
+                
+                <div class="design-tile col-md-6" style="text-align:left">
+                    <img style="width:100%" src="img/attenoire.png">
+                </div>
+                <div class="design-tile col-md-6" style="text-align:left">
+                    <p><b>Sample Libraries</b> — from 2021</p>
+                    <p>Three sample library UI designs. A passion project of mine, experimenting with creating small products.</p>
+                    <a href="design-sampling.html">Read more</a>
+                </div>
+            </div>
+            <div class="row text-center py-5">
+                    <h4>More design projects at<br>
+                    <a href="#">behance.net/akosszasz</a></h4>
+            </div>
+        </div>
+        <section id="cv" class="py-5" style="background-color:#ffffff">
+            <div class="container">
+                <div class="row" style="align-items: center;">
+                    <div class="casestudy-tile col-md-4" style="text-align:left">
+                        <img style="width:100%" src="img/akos.png">
+                    </div>
+                    <div class="casestudy-tile col-md-8" style="text-align:left">
+                        <h4>Hi, I am Akos.</h4>
+                        <p>I build products.</p>
+                        <div style="width:100%; display:flex; justify-content: space-between;">
+                            <a href="#">behance.net</a>
+                            <a style="color:#F05454">0036 70 619 9797</a>
+                            <a style="color:#F05454">gvnsaxon@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-5">
+                    <div class="casestudy-tile col-md-6" style="text-align:left">
+                        <h4>Work Experience</h4>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>2018 —</p>
+                            </div>
+                            <div class="col-md-10">
+                                <p><b>Neticle Plc.</b> — B2B SaaS Startup, NLP platforms<br>
+                                (Product Designer — UI / UX)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>2014 — ‘22</p>
+                            </div>
+                            <div class="col-md-10">
+                                <p><b>Zug Műhely</b> — Freelancing<br>
+                                (Co-Founder, Art Director, Designer, Sitebuilder)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>2017</p>
+                            </div>
+                            <div class="col-md-10">
+                                <p><b>Plus Kreatív Ltd.</b> — Digital Agency<br>
+                                (Graphic Designer, Web Designer, Sitebuilder)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>2017</p>
+                            </div>
+                            <div class="col-md-10">
+                                <p><b>Frank Digital Ltd.</b> — Agency<br>
+                                (Key Visual Artist)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>2016 — ‘17</p>
+                            </div>
+                            <div class="col-md-10">
+                                <p><b>Oktafone Ltd.</b> — SaaS Startup, Education<br>
+                                (Junior UI Designer, Sitebuilder)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>2015</p>
+                            </div>
+                            <div class="col-md-10">
+                                <p><b>Crocobee Ltd.</b> — SaaS Startup, Education<br>
+                                (Graphic Designer, Web Designer, Sitebuilder)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="casestudy-tile col-md-6" style="text-align:left">
+                        <h4>Skills + Experiences</h4>
+                        <ul>
+                            <li>7 years of experience working in Design, including 5 years of UI/UX in the B2B SaaS industry</li>
+                            <li>UX Research, Empathic Design, Service Design, UX Copywriting</li>
+                            <li>Taking concepts from the whiteboard to realistic prototypes</li>
+                            <li>Working together with developers and marketing teams as well</li>
+                            <li>Working in Agile methodology</li>
+                            <li>I have both been a part of design teams and a "UX team of one"</li>
+                            <li>Problemsolving, Proactive</li>
+                            <li>Building Design Systems</li>
+                            <li>Proficiency in Figma, Sketch and the Adobe CC Suite</li>
+                            <li>Speaking English, Hungarian, and (a bit of) Norwegian</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="align-items: center;">
+                    <div style="margin:4rem 0; text-align:center">
+                        <p><b>Thanks,</b> <br>
+                        I'm looking forward working with you!</p>
+                        <img style="width:91px" src="img/AS_logo/Logo-hover.svg">
+                    </div>
+                </div>
+
+            </div>
+            </section>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
