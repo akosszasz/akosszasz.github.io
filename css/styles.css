@@ -11342,6 +11342,11 @@ textarea.form-control-lg {
    }
 } 
 
+.cv-list p::before {
+  content: "+  ";
+  color: #F05454;
+}
+
 /* MOUSE */
 
 .mouse{
