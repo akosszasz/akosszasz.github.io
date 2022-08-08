@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Akos Szasz - Product Designer</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap) -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Fontawesome 6.1.0 -->
+        <link href="fonts/fontawesome-pro-6.1.0-web/css/all.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 117
+            }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                //window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/AS_logo/Logo.svg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span></button>
+                
+            </div>
+        </nav>
+        <!-- Page content-->
+        <section style="height:calc(100vh); display:flex; justify-content: center; align-items: center;">
+        
+        <div class="container">
+            <div class="text-center">
+                <img style="width:100%" src="img/zurvey/zurvey_header.png">
+            </div>
+            <div class="row py-5" style="display:flex;">
+                <div style="justify-content: space-between;display: flex;">
+                    <a href="#">motie</a>
+                    <a style="color: #F05454;">UI/UX Design + Research + Front End</a>
+                    <a style="color: #F05454;">2022</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="container py-5">
+            <div class="text-left py-3">
+                <h3>About motie</h3>
+                <p>Motie is a practice micro-app project of mine.</p>
+                <p>The aim for this project is twofold. One is for me to have a project I can practice my ReactJS chops on, the other is to practice designing for a truly Human problem.</p>
+                <p>The primary problem I try to face is the problem of overstimulation during planning. By creating restrictions, we're forced to make do with our toolkit. Without productivity features in every nook and cranny, we never waste time to select the proper tools. We only need a sticky note.</p>
+            </div>
+            <div class="text-left py-3">
+                <h3>Core Features</h3>
+                <h4>Multiple Projects</h4>
+                <p>Organising and foldering are essential parts of managing projects. Clarity in structure allows a controlled chaos and creativity within projects.</p>
+                <div class="text-center">
+                    <img class="rounded-image" style="max-width:800px; margin: 16px auto" src="img/motie/motie_home.png"> <br>
+                </div>
+            </div>
+            <div class="text-left py-3">
+                <h4>Notes and Folders</h4>
+                <p>The core of the workflow is creating notes. Because the app only allows only foldering and notes to organise ideas, the notes will have to be able to hold your ideas in the proper format.</p>
+                <div class="text-center">
+                    <img class="rounded-image" style="max-width:800px; margin: 16px auto" src="img/motie/motie_note.png"> <br>
+                    <img class="rounded-image" style="max-width:800px; margin: 16px auto" src="img/motie/motie_addnote.png"> <br>
+                </div>
+            </div>
+        </div>
+        
+        <section class="py-5" style="background-color:#ffffff">
+            <div class="container">
+                <div class="row" style="align-items: center;">
+                    <div class="casestudy-tile col-md-4" style="text-align:left">
+                        <img style="width:100%" src="img/akos.png">
+                    </div>
+                    <div class="casestudy-tile col-md-8 py-5" style="text-align:left">
+                        <h4>Hi, I am Akos.</h4>
+                        <p>I'm a product designer specialising in SaaS web-app solutions. I enjoy working in all parts of a product's cycle and am comfortable taking concepts from a whiteboard to a highly detailed prototype flow, keeping the End-User in mind.</p>
+                        <div class="cv-details" style="width:100%; display:flex; justify-content: space-between;">
+                            <a href="https://www.behance.net/akosszasz">behance.net</a>
+                            <a style="color:#F05454">0036 70 619 9797</a>
+                            <a style="color:#F05454">gvnsaxon@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="align-items: center;">
+                    <div style="margin:4rem 0; text-align:center">
+                        <p><b>Cheers,</b> <br>
+                        I'm looking forward to working with you!</p>
+                        <img style="width:91px" src="img/AS_logo/Logo-hover.svg">
+                    </div>
+                </div>
+
+            </div>
+            </section>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
