@@ -11,8 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
 
 :root {
   --bs-blue: #0d6efd;
@@ -57,7 +56,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: 'IBM Plex Sans', sans-serif;
+  --bs-font-sans-serif: 'Archivo', sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -86,9 +85,10 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: #30475E;
+  color: #000;
   text-align: var(--bs-body-text-align);
-  background-color: #f5f5f5;
+  background-color: #fff;
+  letter-spacing: 0.3px;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -4063,7 +4063,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: rgba(245,245,245,.90);
+  background-color: #fff;
 }
 .navbar > .container,
 .navbar > .container-fluid,
