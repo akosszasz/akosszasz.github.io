@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;700&display=swap');
 
 :root {
   --bs-blue: #0d6efd;
@@ -173,6 +173,11 @@ h3,
 .h3 {
   font-size: calc(1.3rem + 0.6vw);
   font-weight: 700;
+  margin: 18px 0;
+  /* font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #585D6B */
 }
 
 @media (min-width: 1200px) {
@@ -181,6 +186,11 @@ h3,
   .h3 {
     font-size: 28px;
     font-weight: 700;
+    margin: 18px 0;
+    /* font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #585D6B */
   }
 }
 
@@ -193,7 +203,7 @@ h4,
 
   h4,
   .h4 {
-    font-size: 28px;
+    /* font-size: 28px; */
   }
 }
 
@@ -211,6 +221,7 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 1.8;
 }
 
 abbr[title],
@@ -293,12 +304,12 @@ sup {
 }
 
 a {
-  color: #F05454;
+  color: #f05454;
   text-decoration: none;
 }
 
 a:hover {
-  color: #F05454;
+  color: #f05454;
   text-decoration: underline;
 }
 
@@ -4530,7 +4541,7 @@ fieldset:disabled .btn {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #F05454;
+  color: #f05454;
   text-decoration: none;
 }
 
@@ -4649,7 +4660,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand img {
-  width: 60px;
+  width: 89px;
 }
 
 .navbar-nav {
@@ -12276,12 +12287,12 @@ fieldset:disabled .btn {
 }
 
 .design-tile img {
-  box-shadow: 0px 4px 14px rgba(131, 146, 165, 0.45);
+  box-shadow: 0px 11px 30px rgb(64 66 82 / 11%), 0px 6.8px 19px rgb(64 66 82 / 1%), 0px 4px 5px rgb(64 66 82 / 15%);
   border-radius: 4px;
 }
 
 .rounded-image {
-  box-shadow: 0px 4px 14px rgba(131, 146, 165, 0.45);
+  box-shadow: 0px 11px 30px rgb(64 66 82 / 11%), 0px 6.8px 19px rgb(64 66 82 / 1%), 0px 4px 5px rgb(64 66 82 / 15%);
   border-radius: 4px;
   width: 100%;
 }
@@ -12299,26 +12310,28 @@ fieldset:disabled .btn {
 
 .design-header > img {
   max-width: 80%;
+  border-radius:4px;
+  box-shadow: 0px 24px 30px rgb(64 66 82 / 11%), 0px 6.8px 19px rgb(64 66 82 / 1%), 0px 4px 5px rgb(64 66 82 / 15%)
 }
 
 #motie-header {
-  background: rgb(40, 42, 58);
-  background: linear-gradient(180deg, rgba(40, 42, 58, 1) 0%, rgba(28, 30, 40, 1) 100%);
+  background: #e4e7eb;
+  /* background: linear-gradient(180deg, rgba(40, 42, 58, 1) 0%, rgba(28, 30, 40, 1) 100%); */
 }
 
 #zurvey-header {
-  background: #1cc6ba;
-  background: linear-gradient(180deg, #4edcd4 0%, #1cc6ba 100%);
+  background: #e4e7eb;
+  /* background: linear-gradient(180deg, rgba(40, 42, 58, 1) 0%, rgba(28, 30, 40, 1) 100%); */
 }
 
 #nmi-header {
-  background: #0099ff;
-  background: linear-gradient(180deg, #0099ff 0%, #0088ff 100%);
+  background: #e4e7eb;
+  /* background: linear-gradient(180deg, rgba(40, 42, 58, 1) 0%, rgba(28, 30, 40, 1) 100%); */
 }
 
 #sample-header {
-  background: #f05454;
-  background: linear-gradient(180deg, #f05454 0%, #dc4d4d 100%);
+  background: #e4e7eb;
+  /* background: linear-gradient(180deg, rgba(40, 42, 58, 1) 0%, rgba(28, 30, 40, 1) 100%); */
 }
 
 @media screen and (max-width: 767px) {
@@ -12330,7 +12343,7 @@ fieldset:disabled .btn {
 
 .cv-list p::before {
   content: "+  ";
-  color: #F05454;
+  color: #f05454;
 }
 
 /* MOUSE */
@@ -12376,7 +12389,7 @@ fieldset:disabled .btn {
   100% {
     margin-top: 20px;
     opacity: 0;
-    background-color: #F05454;
+    background-color: #f05454;
   }
 }
 
@@ -12395,7 +12408,7 @@ fieldset:disabled .btn {
   100% {
     margin-top: 20px;
     opacity: 0;
-    background-color: #F05454;
+    background-color: #f05454;
   }
 }
 
@@ -12414,6 +12427,17 @@ fieldset:disabled .btn {
   100% {
     margin-top: 20px;
     opacity: 0;
-    background-color: #F05454;
+    background-color: #f05454;
   }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
